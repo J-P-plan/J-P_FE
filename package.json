@@ -29,10 +29,6 @@
     "eslint-plugin-prettier": "^4.1.0",
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.6.0",
-<<<<<<< HEAD
-    "husky": "^8",
-=======
->>>>>>> ebc2849 (chore: pre-commit시staged에 올라간 코드만 lint check하도록 로직 추가)
     "lint-staged": "^15.2.2",
     "prettier": "^2.7.1",
     "typescript": "^5"
