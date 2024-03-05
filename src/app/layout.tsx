@@ -1,10 +1,14 @@
 import "./globals.css";
 
-import { Inter } from "next/font/google";
 import type { Metadata } from "next";
+import { Noto_Sans_KR } from "next/font/google";
 import React from "react";
+import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"] });
+const notoSans = Noto_Sans_KR({
+  subsets: ["latin"],
+  weight: ["100", "400", "700", "900"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn("min-h-screen", notoSans.className)}>{children}</body>
     </html>
   );
 }
