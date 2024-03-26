@@ -3,6 +3,7 @@ import { CreateAccount } from "../../components/test/CreateAccount";
 import ExampleClientComponent from "../../components/test/ExampleClientComponent";
 import LanguageChanger from "../../components/test/LanguageChanger";
 import TranslationProvider from "../../components/test/TranslationsProvider";
+import { TvIcon } from "lucide-react";
 import initTranslations from "../i18n";
 
 // import LanguageChanger from "../../components/test/LanguageChanger";
@@ -22,7 +23,9 @@ export default async function Home({ params: { locale } }: Params) {
     <main className="flex flex-col items-center justify-center lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 space-y-16">
       <div className="flex flex-col items-center justify-center w-full h-full space-y-4">
         <h1 className="text-4xl font-bold">Hello World</h1>
-        <Button>Click me</Button>
+        <Button icon={<TvIcon />} iconPlacement="left" variant="shine">
+          Click me
+        </Button>
       </div>
       <div>
         <CreateAccount />
