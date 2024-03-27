@@ -10,7 +10,7 @@ import {
 } from "../ui/card";
 
 import { Button } from "../ui/button";
-import { Input } from "../ui/input";
+import { Input } from "../../app/input";
 import { Label } from "../ui/label";
 
 export function CreateAccount() {
