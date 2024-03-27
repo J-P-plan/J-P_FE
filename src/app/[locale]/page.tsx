@@ -1,4 +1,7 @@
 import { Button } from "../../components/ui/button";
+import Card1 from "../../components/card/Card1";
+import Card2 from "../../components/card/Card2";
+import Card3 from "../../components/card/Card3";
 import { CreateAccount } from "../../components/test/CreateAccount";
 import ExampleClientComponent from "../../components/test/ExampleClientComponent";
 import LanguageChanger from "../../components/test/LanguageChanger";
@@ -29,6 +32,9 @@ export default async function Home({ params: { locale } }: Params) {
       </div>
       <div>
         <CreateAccount />
+        <Card1 />
+        <Card2 />
+        <Card3 />
       </div>
       <h1>{t("header")}</h1>
       <TranslationProvider
