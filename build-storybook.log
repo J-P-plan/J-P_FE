@@ -1,0 +1,33 @@
+
+> jnp-fe@0.1.0 build-storybook
+> storybook build --output-dir /tmp/chromatic--74998-ha2wIOlzaVCd
+
+@storybook/cli v7.6.17
+
+info => Cleaning outputDir: /tmp/chromatic--74998-ha2wIOlzaVCd
+info => Loading presets
+info => Building manager..
+info => Manager built (105 ms)
+info => Building preview..
+info => Copying static files: /Users/yunpro/Documents/jnp-fe/node_modules/@storybook/manager/static at /tmp/chromatic--74998-ha2wIOlzaVCd/sb-common-assets
+WARN No story files found for the specified pattern: src/**/*.mdx
+info Using Babel compiler
+info Addon-docs: using MDX2
+info => Using implicit CSS loaders
+info => [@storybook/addon-styling-webpack] Applying custom Storybook webpack configuration styling.
+info => Using default Webpack5 setup
+WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+WARN This can impact web performance.
+WARN Assets: 
+WARN   71.4cbe423e.iframe.bundle.js (583 KiB)
+WARN   97.a28c8116.iframe.bundle.js (924 KiB)
+WARN   216.5b8b294e.iframe.bundle.js (716 KiB)
+WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+WARN Entrypoints:
+WARN   main (980 KiB)
+WARN       runtime~main.1d26d8af.iframe.bundle.js
+WARN       97.a28c8116.iframe.bundle.js
+WARN       main.71be8102.iframe.bundle.js
+WARN 
+info => Preview built (8.31 s)
+info => Output directory: /tmp/chromatic--74998-ha2wIOlzaVCd
