@@ -1,13 +1,12 @@
-import { Button } from "../../components/ui/button";
-import Card1 from "../../components/card/Card1";
-import Card2 from "../../components/card/Card2";
-import Card3 from "../../components/card/Card3";
-import { CreateAccount } from "../../components/test/CreateAccount";
-import ExampleClientComponent from "../../components/test/ExampleClientComponent";
-import LanguageChanger from "../../components/test/LanguageChanger";
-import TranslationProvider from "../../components/test/TranslationsProvider";
+import { Button } from "@/components/ui/Button";
+import Card1 from "@/components/ui/cards/Card1";
+import Card2 from "@/components/ui/cards/Card2";
+import Card3 from "@/components/ui/cards/Card3";
+import ExampleClientComponent from "@/components/test/ExampleClientComponent";
+import LanguageChanger from "@/components/test/LanguageChanger";
+import TranslationProvider from "@/lib/shared/TranslationsProvider";
 import { TvIcon } from "lucide-react";
-import initTranslations from "../i18n";
+import initTranslations from "@/lib/shared/i18n";
 
 // import LanguageChanger from "../../components/test/LanguageChanger";
 
@@ -31,7 +30,6 @@ export default async function Home({ params: { locale } }: Params) {
         </Button>
       </div>
       <div>
-        <CreateAccount />
         <Card1 />
         <Card2 />
         <Card3 />

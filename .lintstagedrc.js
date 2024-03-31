@@ -1,9 +1,9 @@
 module.exports = {
   // Run type-check on changes to TypeScript files
-  "**/*.ts?(x)": () => "yarn type-check",
+  "**/*.ts?(x)": () => "npm run type-check",
   // Lint & Prettify TS and JS files
   "**/*.(ts|tsx|js)": filenames => [
-    `yarn lint . ${filenames.join(" ")}`,
-    `yarn prettier --write ${filenames.join(" ")}`,
+    `npm run lint . ${filenames.join(" ")}`,
+    `npx prettier --write ${filenames.join(" ")}`,
   ],
 };
