@@ -1,9 +1,9 @@
-import "./globals.css";
+import "../../lib/styles/globals.css";
 
 import type { Metadata } from "next";
 import { Noto_Sans_KR } from "next/font/google";
 import React from "react";
-import { cn } from "../../lib/utils";
+import { cn } from "../../lib/utils/cn";
 import { dir } from "i18next";
 import i18nConfig from "../../../i18nConfig";
 

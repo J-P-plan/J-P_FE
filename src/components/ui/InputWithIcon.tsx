@@ -1,7 +1,6 @@
-import { Input } from "../../app/input";
+import { Input } from "./Input";
 import React from "react";
-import { cn } from "../../lib/utils";
-
+import { cn } from "../../lib/utils/cn";
 interface InputWithIconProps
   extends React.InputHTMLAttributes<HTMLInputElement> {
   Icon: React.ReactNode;
