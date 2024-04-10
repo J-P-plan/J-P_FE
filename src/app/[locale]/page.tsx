@@ -1,29 +1,25 @@
-import { Button } from "@/components/ui/Button";
-import Card1 from "@/components/ui/cards/Card1";
-import Card2 from "@/components/ui/cards/Card2";
-import Card3 from "@/components/ui/cards/Card3";
-import ExampleClientComponent from "@/components/test/ExampleClientComponent";
-import LanguageChanger from "@/components/test/LanguageChanger";
-import TranslationProvider from "@/lib/shared/TranslationsProvider";
-import { TvIcon } from "lucide-react";
-import initTranslations from "@/lib/shared/i18n";
+// import initTranslations from "@/lib/shared/i18n";
 
-// import LanguageChanger from "../../components/test/LanguageChanger";
+import { redirect } from "next/navigation";
 
-type Params = {
-  params: {
-    locale: string;
-  };
-};
+// // import LanguageChanger from "../../components/test/LanguageChanger";
 
-const i18nNamespaces = ["home"];
+// type Params = {
+//   params: {
+//     locale: string;
+//   };
+// };
 
-export default async function Home({ params: { locale } }: Params) {
-  const { t, resources } = await initTranslations(locale, i18nNamespaces);
+// const i18nNamespaces = ["home"];
+
+export default function Home() {
+  // const { t, resources } = await initTranslations(locale, i18nNamespaces);
+
+  redirect("/home");
 
   return (
     <main className="flex flex-col items-center justify-center lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 space-y-16">
-      <div className="flex flex-col items-center justify-center w-full h-full space-y-4">
+      {/* <div className="flex flex-col items-center justify-center w-full h-full space-y-4">
         <h1 className="text-4xl font-bold">Hello World</h1>
         <Button icon={<TvIcon />} iconPlacement="left" variant="shine">
           Click me
@@ -42,7 +38,7 @@ export default async function Home({ params: { locale } }: Params) {
       >
         <ExampleClientComponent />
         <LanguageChanger />
-      </TranslationProvider>
+      </TranslationProvider> */}
     </main>
   );
 }
