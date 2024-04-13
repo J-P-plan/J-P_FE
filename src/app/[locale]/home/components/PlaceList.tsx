@@ -3,6 +3,7 @@ import { PlaceAPI } from "@/lib/api/place";
 import React from "react";
 import ThemeItem from "./ThemeItem";
 import TravelItem from "./TravelItem";
+import WithTitleWrapper from "@/components/common/WithTitleWrapper";
 
 const PlaceMap = {
   CITY: {
@@ -30,19 +31,16 @@ const PlaceList = async ({ placeType }: Props) => {
     elementCnt: 10,
   });
 
-  const PlaceItem = PlaceMap[placeType];
+  const placeItem = PlaceMap[placeType];
 
   return (
-    <div className="flex flex-col overflow-x-auto gap-3">
-      <h3 className="text-[#1a1a1a] font-['SUIT'] text-xl font-bold leading-[normal] capitalize">
-        {PlaceItem.title}
-      </h3>
+    <WithTitleWrapper title={placeItem.title}>
       <ul className="flex overflow-x-auto space-x-2 ">
         {data.map(place => (
-          <PlaceItem.component key={place.placeId} place={place} />
+          <placeItem.component key={place.placeId} place={place} />
         ))}
       </ul>
-    </div>
+    </WithTitleWrapper>
   );
 };
 
