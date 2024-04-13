@@ -8,13 +8,15 @@ const CardTitle = React.forwardRef<
 >(({ className, ...props }, ref) => {
   const { title, description } = useCardContext();
   return (
-    <div
-      ref={ref}
-      className={cn("flex items-center gap-2", className)}
-      {...props}
-    >
-      <h2 className="text-xl font-semibold">{title}</h2>
-      {description && <p className="text-sm text-gray-500">{description}</p>}
+    <div ref={ref} className={cn("flex flex-col gap-2", className)} {...props}>
+      <h2 className="text-[#1a1a1a]  text-sm font-bold leading-[140%]">
+        {title}
+      </h2>
+      {description && (
+        <p className="text-[#1a1a1a] whitespace-no-wrap  text-sm leading-[140%]">
+          {description}
+        </p>
+      )}
     </div>
   );
 });

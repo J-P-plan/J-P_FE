@@ -16,10 +16,11 @@ const UserInfo = React.forwardRef<
       {...props}
     >
       <Avatar>
-        <AvatarImage src={userImageSrc} alt={userName} />
+        <AvatarImage src={userImageSrc} alt={userName} width={24} height={24} />
+        {/* [TODO]: change userName -> loading image */}
         <AvatarFallback>{userName}</AvatarFallback>
       </Avatar>
-      <div className="text-md">{userName}</div>
+      <div className="flex items-center text-[#1a1a1a] text-xs">{userName}</div>
     </div>
   );
 });

@@ -18,10 +18,10 @@ const ThemeItem = ({ place }: Props) => {
         height={120}
       />
       <div className="absolute left-4 bottom-3 text-white">
-        <p className="title flex-shrink-0 w-[4.4375rem] h-[1.0625rem] overflow-hidden text-white whitespace-no-wrap font-['SUIT'] text-sm font-bold leading-[normal] capitalize">
+        <p className="title flex-shrink-0 w-[4.4375rem] h-[1.0625rem] overflow-hidden text-white whitespace-no-wrap text-sm font-bold leading-[normal] capitalize">
           {place.name}
         </p>
-        <p className="text-white font-['SUIT'] text-xs font-bold leading-[normal] capitalize">
+        <p className="text-white text-xs font-bold leading-[normal] capitalize">
           {place.subName}
         </p>
       </div>

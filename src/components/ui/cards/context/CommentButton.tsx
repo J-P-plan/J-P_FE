@@ -1,5 +1,5 @@
 import { Button } from "../../Button";
-import { CircleIcon } from "lucide-react";
+import CommentIcon from "@/components/icons/CommentIcon";
 import React from "react";
 import { cn } from "@/lib/utils/cn";
 import { useCardContext } from "./CardProvider";
@@ -14,12 +14,15 @@ const CommentButton = React.forwardRef<
       ref={ref}
       size="icon"
       variant="ghost"
-      className={cn("flex items-center gap-2 w-6 h-6", className)}
+      className={cn(
+        "flex items-center align-baseline gap-1 text-[#b8b8b8] text-xs",
+        className
+      )}
       onClick={() => {}}
       {...props}
     >
-      <CircleIcon />
-      <span className="text-xs">{commentCount}</span>
+      <CommentIcon className="w-4 h-4" />
+      {commentCount}
     </Button>
   );
 });

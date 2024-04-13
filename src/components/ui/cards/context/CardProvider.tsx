@@ -12,8 +12,7 @@ interface ICard {
   isLike?: boolean;
   likeCount?: number;
   commentCount: number;
-  isStar?: boolean;
-  starCount?: number;
+  starRating?: number;
   imageSrc?: string;
   tagList?: string[];
   title: string;
