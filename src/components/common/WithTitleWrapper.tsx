@@ -1,16 +1,23 @@
+import Link from "next/link";
 import React from "react";
 
 interface Props {
   title: string;
+  moreHref: string;
   children: React.ReactNode;
 }
 
-const WithTitleWrapper = ({ title, children }: Props) => {
+const WithTitleWrapper = ({ title, moreHref, children }: Props) => {
   return (
     <div className="flex flex-col overflow-x-auto gap-3">
-      <p className="text-[#1a1a1a] text-xl font-bold leading-[normal] capitalize">
-        {title}
-      </p>
+      <div className="flex justify-between items-center">
+        <h2 className="text-[#1a1a1a] text-xl font-bold leading-[normal] capitalize">
+          {title}
+        </h2>
+        <Link href={moreHref} className="text-[#b8b8b8] text-xs">
+          더보기
+        </Link>
+      </div>
       {children}
     </div>
   );
