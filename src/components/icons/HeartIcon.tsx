@@ -16,7 +16,7 @@ const HeartIcon = ({ className, fill = "none", stroke = "#B8B8B8" }: Props) => {
       fill={fill}
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_1024_5713)">
+      <g clipPath="url(#clip0_1024_5713)">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
