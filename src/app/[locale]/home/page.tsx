@@ -10,9 +10,9 @@ const page = async () => {
     <div className="flex flex-col px-4 gap-6">
       <Header />
       <div className="flex flex-col gap-6">
-        <PlaceList placeType="TRAVEL" />
-        <PlaceList placeType="CITY" />
-        <PlaceList placeType="THEME" />
+        <PlaceList placeType="TRAVEL" moreHref="travels" />
+        <PlaceList placeType="CITY" moreHref="cities" />
+        <PlaceList placeType="THEME" moreHref="themes" />
       </div>
       <div>
         <TravelStoryList />
