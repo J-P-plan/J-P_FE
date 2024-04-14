@@ -16,6 +16,7 @@ const CityItem = ({ place }: Props) => {
         className="w-30 h-30 object-cover rounded-lg"
         width={120}
         height={120}
+        priority
       />
       <p className="absolute right-4 bottom-3 text-white font-bold leading-[normal] capitalize">
         {place.name}
