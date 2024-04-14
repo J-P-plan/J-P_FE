@@ -16,6 +16,7 @@ const TravelItem = ({ place }: Props) => {
         className="w-30 h-30 object-cover rounded-lg"
         width={120}
         height={120}
+        priority
       />
       <div className="flex flex-col gap-1">
         <p className="text-sm font-bold leading-[normal] capitalize">
