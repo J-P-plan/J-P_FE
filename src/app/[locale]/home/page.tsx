@@ -1,5 +1,5 @@
 import MobileHomeHeader from "./components/MobileHomeHeader";
-import MobileMenu from "@/components/common/MobileMenu";
+import MobileNavigation from "@/components/common/MobileNavigation";
 import PlaceList from "./components/PlaceList";
 import React from "react";
 import ReviewList from "./components/ReviewList";
@@ -8,21 +8,22 @@ import TravelStoryList from "./components/TravelStoryList";
 
 const page = async () => {
   return (
-    <div className="flex flex-col p-4 gap-6">
-      <MobileHomeHeader />
+    <main>
+      <div className="flex flex-col p-4 pb-20 gap-6">
+        <MobileHomeHeader />
 
-      <SearchPlace />
+        <SearchPlace />
 
-      <PlaceList placeType="TRAVEL" moreHref="travels" />
-      <PlaceList placeType="CITY" moreHref="cities" />
-      <PlaceList placeType="THEME" moreHref="themes" />
+        <PlaceList placeType="TRAVEL" moreHref="travels" />
+        <PlaceList placeType="CITY" moreHref="cities" />
+        <PlaceList placeType="THEME" moreHref="themes" />
 
-      <TravelStoryList />
+        <TravelStoryList />
 
-      <ReviewList />
-
-      <MobileMenu />
-    </div>
+        <ReviewList />
+      </div>
+      <MobileNavigation />
+    </main>
   );
 };
 
