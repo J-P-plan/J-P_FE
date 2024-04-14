@@ -4,12 +4,14 @@ interface Props {
   className?: string;
   fill?: string;
   stroke?: string;
+  strokeWidth?: string;
 }
 
 const SearchIcon = ({
   className,
   fill = "none",
-  stroke = "#1A1A1A",
+  stroke = "#4D4D4D",
+  strokeWidth = "1.5",
 }: Props) => {
   return (
     <svg
@@ -23,7 +25,7 @@ const SearchIcon = ({
       <path
         d="M16.9269 17.04L20.4 20.4M19.28 11.44C19.28 15.7699 15.7699 19.28 11.44 19.28C7.11009 19.28 3.60001 15.7699 3.60001 11.44C3.60001 7.11006 7.11009 3.59998 11.44 3.59998C15.7699 3.59998 19.28 7.11006 19.28 11.44Z"
         stroke={stroke}
-        strokeWidth="1.5"
+        strokeWidth={strokeWidth}
         strokeLinecap="round"
       />
     </svg>
