@@ -1,6 +1,7 @@
 import "../../lib/styles/globals.css";
 
 import type { Metadata } from "next";
+import { MockProvider } from "@/mocks/MockProvider";
 import React from "react";
 import { cn } from "../../lib/utils/cn";
 import { dir } from "i18next";
@@ -30,7 +31,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={locale} dir={dir(locale)}>
-      <body className={cn("min-h-dvh", suit.className)}>{children}</body>
+      <body className={cn("min-h-dvh", suit.className)}>
+        <MockProvider />
+        {children}
+      </body>
     </html>
   );
 }
