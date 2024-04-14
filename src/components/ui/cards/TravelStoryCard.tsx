@@ -1,23 +1,17 @@
 "use client";
 
 import Card from "./context/CardProvider";
+import { ITravelStory } from "@/lib/types/travel";
 import React from "react";
 
-const TravelStoryCard = () => {
-  const card = {
-    isLike: true,
-    likeCount: 10,
-    commentCount: 5,
-    imageSrc: "https://www.ghibli.jp/gallery/ponyo016.jpg",
-    tagList: ["#서울", "#대전"],
-    title: "첫번째 카드",
-    userName: "신윤철",
-    userImageSrc: "https://www.ghibli.jp/gallery/ponyo016.jpg",
-  };
+interface Props {
+  story: ITravelStory;
+}
 
+const TravelStoryCard = ({ story }: Props) => {
   return (
     <div className="flex items-center gap-4 px-4 py-4 border rounded-md bg-white">
-      <Card card={card}>
+      <Card card={story}>
         <Card.CardImage />
         <div className="flex flex-col gap-2 flex-1">
           <Card.CardTags />
