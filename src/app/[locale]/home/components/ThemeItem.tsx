@@ -1,9 +1,9 @@
-import { IPlace } from "@/lib/types/place";
 import Image from "next/image";
+import { Place } from "@/lib/types/place";
 import React from "react";
 
 interface Props {
-  place: IPlace;
+  place: Place;
   priority?: boolean;
 }
 
