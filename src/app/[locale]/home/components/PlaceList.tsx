@@ -37,8 +37,12 @@ const PlaceList = async ({ placeType, moreHref }: Props) => {
   return (
     <WithTitleWrapper title={placeItem.title} moreHref={moreHref}>
       <ul className="flex overflow-x-auto space-x-2 ">
-        {data.map(place => (
-          <placeItem.component key={place.placeId} place={place} />
+        {data.map((place, index) => (
+          <placeItem.component
+            key={place.placeId}
+            place={place}
+            priority={index < 5}
+          />
         ))}
       </ul>
     </WithTitleWrapper>
