@@ -1,9 +1,9 @@
-import { IGetPlaceDTO, IResponsePlace } from "../types/place";
+import { GetPlaceDTO, ResponsePlace } from "../types/place";
 
 import QueryString from "qs";
 
 export const PlaceAPI = {
-  getPlace: async (dto: IGetPlaceDTO): Promise<IResponsePlace> => {
+  getPlace: async (dto: GetPlaceDTO): Promise<ResponsePlace> => {
     const data = await (
       await fetch(
         process.env.API_HOST + `/places?${QueryString.stringify(dto)}`,
