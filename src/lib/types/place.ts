@@ -1,11 +1,11 @@
-export interface IGetPlaceDTO {
+export interface GetPlaceDTO {
   page: number;
   placeType?: "CITY" | "TRAVEL" | "THEME";
   searchString?: string;
   elementCnt?: number;
 }
 
-export interface IResponsePlace {
+export interface ResponsePlace {
   pageInfo: {
     page: number;
     hasNext: number;
@@ -13,10 +13,10 @@ export interface IResponsePlace {
     totalElements: number;
     totalPages: number;
   };
-  data: IPlace[];
+  data: Place[];
 }
 
-export interface IPlace {
+export interface Place {
   id: number;
   placeId: string;
   name: string;
