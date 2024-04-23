@@ -1,10 +1,10 @@
-import MobileHomeHeader from "./components/MobileHomeHeader";
+import MobileHomeHeader from "./components/header/MobileHomeHeader";
 import MobileNavigation from "@/components/common/MobileNavigation";
-import PlaceList from "./components/PlaceList";
+import PlaceList from "./components/place/PlaceList";
 import React from "react";
-import ReviewList from "./components/ReviewList";
-import SearchPlace from "./components/SearchPlace";
-import TravelStoryList from "./components/TravelStoryList";
+import ReviewList from "./components/review/ReviewList";
+import SearchPlace from "./components/header/SearchPlace";
+import TravelStoryList from "./components/review/TravelStoryList";
 
 const page = async () => {
   return (
