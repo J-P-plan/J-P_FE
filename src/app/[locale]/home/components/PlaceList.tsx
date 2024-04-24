@@ -22,10 +22,9 @@ const PlaceMap = {
 
 interface Props {
   placeType: "CITY" | "TRAVEL" | "THEME";
-  moreHref: string;
 }
 
-const PlaceList = async ({ placeType, moreHref }: Props) => {
+const PlaceList = async ({ placeType }: Props) => {
   const { data } = await PlaceAPI.getPlace({
     page: 1,
     placeType,
@@ -35,7 +34,7 @@ const PlaceList = async ({ placeType, moreHref }: Props) => {
   const placeItem = PlaceMap[placeType];
 
   return (
-    <WithTitleWrapper title={placeItem.title} moreHref={moreHref}>
+    <WithTitleWrapper title={placeItem.title}>
       <ul className="flex overflow-x-auto space-x-2 ">
         {data.map(place => (
           <placeItem.component key={place.placeId} place={place} />
