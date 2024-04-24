@@ -9,7 +9,7 @@ interface Props {
 
 const WithTitleWrapper = ({ title, moreHref, children }: Props) => {
   return (
-    <section className="flex flex-col overflow-x-auto gap-3">
+    <div className="flex flex-col overflow-x-auto gap-3">
       <div className="flex justify-between items-center">
         <h2 className="text-[#1a1a1a] text-xl font-bold leading-[normal] capitalize">
           {title}
@@ -19,7 +19,7 @@ const WithTitleWrapper = ({ title, moreHref, children }: Props) => {
         </Link>
       </div>
       {children}
-    </section>
+    </div>
   );
 };
 
