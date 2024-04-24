@@ -8,7 +8,7 @@ interface Props {
 const WithTitleWrapper = ({ title, children }: Props) => {
   return (
     <div className="flex flex-col overflow-x-auto gap-3">
-      <p className="text-[#1a1a1a] text-xl font-bold leading-[normal] capitalize">
+      <p className="text-[#1a1a1a] font-['SUIT'] text-xl font-bold leading-[normal] capitalize">
         {title}
       </p>
       {children}
