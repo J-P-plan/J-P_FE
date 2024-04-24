@@ -5,12 +5,6 @@ import React from "react";
 import { cn } from "../../lib/utils/cn";
 import { dir } from "i18next";
 import i18nConfig from "../../../i18nConfig";
-import localFont from "next/font/local";
-
-const suit = localFont({
-  src: "../fonts/SUIT-Variable-woff2/SUIT-Variable.woff2",
-  display: "swap",
-});
 
 export function generateStaticParams() {
   return i18nConfig.locales.map(locale => ({ locale }));
@@ -30,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={locale} dir={dir(locale)}>
-      <body className={cn("min-h-dvh", suit.className)}>{children}</body>
+      <body className={cn("min-h-screen")}>{children}</body>
     </html>
   );
 }
