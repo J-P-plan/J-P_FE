@@ -13,9 +13,9 @@ const ThemeItem = ({ place }: Props) => {
       <Image
         src={img}
         alt="travel"
-        className="w-36 h-32 object-cover rounded-lg"
-        width={144}
-        height={128}
+        className="w-28 h-28 object-cover rounded-lg"
+        width={120}
+        height={120}
       />
       <div className="absolute left-4 bottom-3 text-white">
         <p className="title flex-shrink-0 w-[4.4375rem] h-[1.0625rem] overflow-hidden text-white whitespace-no-wrap text-sm font-bold leading-[normal] capitalize">
