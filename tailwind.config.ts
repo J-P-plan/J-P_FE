@@ -63,8 +63,6 @@ const config = {
       },
       boxShadow: {
         input: "0px 4px 15px 0px rgba(26, 26, 26, 0.05)",
-        menuOpen: "4.1px -5px 0 0 rgb(17,24,39)",
-        menuClose: "-4.1px -5px 0 0 rgb(17,24,39)",
       },
       keyframes: {
         "accordion-down": {
