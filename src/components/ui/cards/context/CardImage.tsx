@@ -11,11 +11,11 @@ const CardImage = React.forwardRef<
   return (
     <div className={cn("flex-shrink-0", className)} ref={ref}>
       <Image
-        className="h-20 w-20 object-cover rounded-lg"
+        className="h-48 w-200 object-cover rounded-lg"
         src={imageSrc || "https://www.ghibli.jp/gallery/ponyo016.jpg"}
         alt="Ponyo"
-        width={80}
-        height={80}
+        width={200}
+        height={100}
         {...props}
       />
     </div>

@@ -21,7 +21,7 @@ const TravelItem = ({ place }: Props) => {
         <p className="text-sm font-bold leading-[normal] capitalize">
           {place.name}
         </p>
-        <p className="text-[#666] text-xs font-bold leading-[normal] capitalize">
+        <p className="text-[#666] font-['SUIT'] text-xs font-bold leading-[normal] capitalize">
           {place.subName}
         </p>
       </div>

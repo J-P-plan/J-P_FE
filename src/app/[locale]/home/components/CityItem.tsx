@@ -17,7 +17,7 @@ const CityItem = ({ place }: Props) => {
         width={120}
         height={120}
       />
-      <p className="absolute right-4 bottom-3 text-white  font-bold leading-[normal] capitalize">
+      <p className="absolute right-4 bottom-3 text-white font-['SUIT'] font-bold leading-[normal] capitalize">
         {place.name}
       </p>
     </li>
