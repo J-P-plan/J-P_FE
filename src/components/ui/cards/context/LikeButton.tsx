@@ -1,7 +1,7 @@
+import { Heart, HeartOff } from "lucide-react";
 import React, { useState } from "react";
 
 import { Button } from "../../Button";
-import HeartIcon from "@/components/icons/HeartIcon";
 import { cn } from "@/lib/utils/cn";
 import { useCardContext } from "./CardProvider";
 
@@ -18,18 +18,12 @@ const LikeButton = React.forwardRef<
       ref={ref}
       size="icon"
       variant="ghost"
-      className={cn("flex items-center gap-1", className)}
+      className={cn("flex items-center gap-2", className)}
       onClick={() => setLike(!like)}
       {...props}
     >
-      <HeartIcon
-        className="w-4 h-4"
-        fill={isLike ? "red" : "none"}
-        stroke={isLike ? "red" : "#b8b8b8"}
-      />
-      <span className="flex items-center text-[#b8b8b8] text-xs">
-        {like ? likeCount! + 1 : likeCount}
-      </span>
+      {isLike ? <Heart size={20} /> : <HeartOff size={20} />}
+      <span className="text-xs">{like ? likeCount! + 1 : likeCount}</span>
     </Button>
   );
 });
