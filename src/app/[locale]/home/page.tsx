@@ -1,4 +1,4 @@
-import MobileHomeHeader from "./components/MobileHomeHeader";
+import Header from "../../../components/common/Header";
 import MobileMenu from "@/components/common/MobileMenu";
 import PlaceList from "./components/PlaceList";
 import React from "react";
@@ -7,17 +7,19 @@ import TravelStoryList from "./components/TravelStoryList";
 
 const page = async () => {
   return (
-    <div className="flex flex-col p-4 gap-6">
-      <MobileHomeHeader />
-
-      <PlaceList placeType="TRAVEL" moreHref="travels" />
-      <PlaceList placeType="CITY" moreHref="cities" />
-      <PlaceList placeType="THEME" moreHref="themes" />
-
-      <TravelStoryList />
-
-      <ReviewList />
-
+    <div className="flex flex-col px-4 gap-6">
+      <Header />
+      <div className="flex flex-col gap-6">
+        <PlaceList placeType="TRAVEL" moreHref="travels" />
+        <PlaceList placeType="CITY" moreHref="cities" />
+        <PlaceList placeType="THEME" moreHref="themes" />
+      </div>
+      <div>
+        <TravelStoryList />
+      </div>
+      <div>
+        <ReviewList />
+      </div>
       <MobileMenu />
     </div>
   );
