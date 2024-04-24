@@ -1,6 +1,6 @@
-import { ResponsePlace } from "@/lib/types/place";
+import { IResponsePlace } from "@/lib/types/place";
 
-export const placeResponse: ResponsePlace = {
+export const placeResponse: IResponsePlace = {
   pageInfo: {
     page: 1,
     hasNext: 1,
