@@ -13,7 +13,7 @@ const TravelItem = ({ place }: Props) => {
       <Image
         src={img}
         alt="travel"
-        className="w-30 h-30 object-cover rounded-lg"
+        className="w-28 h-28 object-cover rounded-lg"
         width={120}
         height={120}
       />
