@@ -4,7 +4,7 @@ import WithTitleWrapper from "@/components/common/WithTitleWrapper";
 
 const TravelStoryList = () => {
   return (
-    <WithTitleWrapper title="지금뜨는 여행기" moreHref="stories">
+    <WithTitleWrapper title="지금뜨는 여행기">
       <div className="flex flex-col gap-2">
         <TravelStoryCard />
         <TravelStoryCard />
