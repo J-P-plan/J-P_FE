@@ -4,10 +4,9 @@ import React from "react";
 
 interface Props {
   place: IPlace;
-  priority?: boolean;
 }
 
-const ThemeItem = ({ place, priority }: Props) => {
+const ThemeItem = ({ place }: Props) => {
   const img = "https://www.ghibli.jp/gallery/ponyo016.jpg";
   return (
     <li className="flex-none flex items-center relative">
@@ -17,7 +16,7 @@ const ThemeItem = ({ place, priority }: Props) => {
         className="w-36 h-32 object-cover rounded-lg"
         width={144}
         height={128}
-        priority={priority}
+        priority
       />
       <div className="absolute left-4 bottom-3 text-white">
         <p className="title flex-shrink-0 w-[4.4375rem] h-[1.0625rem] overflow-hidden text-white whitespace-no-wrap text-sm font-bold leading-[normal] capitalize">
