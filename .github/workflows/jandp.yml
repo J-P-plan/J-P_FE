@@ -21,8 +21,8 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.AUTO_ACTIONS }}
         with:
           source-directory: "output"
-          destination-github-username: "your-github-name"
-          destination-repository-name: "your-project-name"
+          destination-github-username: "dev-yun"
+          destination-repository-name: "jandp-travel"
           user-email: ${{ secrets.EMAIL }}
           commit-message: ${{ github.event.commits[0].message }}
           target-branch: main
