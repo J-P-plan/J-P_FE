@@ -1,6 +1,5 @@
 // import initTranslations from "@/lib/shared/i18n";
-
-import { redirect } from "next/navigation";
+import React from "react";
 
 // // import LanguageChanger from "../../components/test/LanguageChanger";
 
@@ -14,8 +13,6 @@ import { redirect } from "next/navigation";
 
 export default function Home() {
   // const { t, resources } = await initTranslations(locale, i18nNamespaces);
-
-  redirect("/home");
 
   return (
     <main className="flex flex-col items-center justify-center lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30 space-y-16">
@@ -39,6 +36,7 @@ export default function Home() {
         <ExampleClientComponent />
         <LanguageChanger />
       </TranslationProvider> */}
+      메인
     </main>
   );
 }

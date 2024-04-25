@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import { AppleIcon } from "lucide-react";
 import { Button } from "./button";
+import React from "react";
 
 const meta: Meta<typeof Button> = {
   component: Button,
