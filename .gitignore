@@ -37,6 +37,7 @@ next-env.d.ts
 
 # storybook
 .cache/storybook
+storybook-static
 
 # ssl
 ssl/*
