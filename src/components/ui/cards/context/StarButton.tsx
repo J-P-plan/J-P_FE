@@ -1,4 +1,4 @@
-import { Button } from "../../Button";
+import { Button } from "../../button";
 import React from "react";
 import StarIcon from "@/components/icons/StartIcon";
 import { cn } from "@/lib/utils/cn";

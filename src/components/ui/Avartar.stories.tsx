@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from "./Avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "./avatar";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof Avatar> = {

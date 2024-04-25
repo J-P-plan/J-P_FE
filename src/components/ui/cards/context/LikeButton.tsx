@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Button } from "../../Button";
+import { Button } from "../../button";
 import HeartIcon from "@/components/icons/HeartIcon";
 import { cn } from "@/lib/utils/cn";
 import { useCardContext } from "./CardProvider";

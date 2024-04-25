@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from "../../Avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "../../avatar";
 
 import React from "react";
 import { cn } from "@/lib/utils/cn";
