@@ -1,21 +1,15 @@
-import "../../lib/styles/globals.css";
+import "../lib/styles/globals.css";
 
 import type { Metadata } from "next";
 import { MockProvider } from "@/mocks/MockProvider";
 import React from "react";
-import { cn } from "../../lib/utils/cn";
-import { dir } from "i18next";
-import i18nConfig from "../../../i18nConfig";
+import { cn } from "@/lib/utils/cn";
 import localFont from "next/font/local";
 
 const suit = localFont({
-  src: "../fonts/SUIT-Variable-woff2/SUIT-Variable.woff2",
+  src: "./fonts/SUIT-Variable-woff2/SUIT-Variable.woff2",
   display: "swap",
 });
-
-export function generateStaticParams() {
-  return i18nConfig.locales.map(locale => ({ locale }));
-}
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,13 +18,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  params: { locale },
-}: Readonly<{
-  children: React.ReactNode;
-  params: { locale: string };
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang={locale} dir={dir(locale)}>
+    <html>
       <body className={cn("min-h-dvh", suit.className)}>
         <MockProvider />
         {children}
