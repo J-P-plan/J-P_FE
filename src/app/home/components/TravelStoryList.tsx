@@ -15,7 +15,7 @@ const TravelStoryList = async () => {
   const stories = await getTravelStories();
 
   return (
-    <WithTitleWrapper title="지금뜨는 여행기" moreHref="stories">
+    <WithTitleWrapper title="지금뜨는 여행기" moreHref="story">
       <div className="flex flex-col gap-2">
         {[...stories.data].slice(0, 2).map(story => (
           <TravelStoryCard key={story.id} story={story} />

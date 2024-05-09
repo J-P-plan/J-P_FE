@@ -15,7 +15,7 @@ const ReviewList = async () => {
   const reviews = await getReviews();
 
   return (
-    <WithTitleWrapper title="지금뜨는 리뷰" moreHref="reviews">
+    <WithTitleWrapper title="지금뜨는 리뷰" moreHref="review">
       <div className="flex flex-col gap-2">
         {[...reviews.data].slice(0, 2).map(review => (
           <ReviewCard key={review.id} review={review} />

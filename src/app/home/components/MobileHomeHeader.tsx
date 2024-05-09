@@ -9,7 +9,6 @@ const MobileHomeHeader = () => {
       leftNode={
         <Link
           href="/home"
-          prefetch={false}
           className="block border border-grey-300 rounded-lg p-2"
         >
           logo

@@ -14,9 +14,9 @@ const page = async () => {
 
         <SearchPlace />
 
-        <PlaceList placeType="TRAVEL" moreHref="travels" />
-        <PlaceList placeType="CITY" moreHref="cities" />
-        <PlaceList placeType="THEME" moreHref="themes" />
+        <PlaceList placeType="TRAVEL" moreHref="/travel" />
+        <PlaceList placeType="CITY" moreHref="/city" />
+        <PlaceList placeType="THEME" moreHref="/theme" />
 
         <TravelStoryList />
 
