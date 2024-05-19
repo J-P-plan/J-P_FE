@@ -9,7 +9,7 @@ const MobileHomeHeader = () => {
       leftNode={
         <Link
           href="/home"
-          className="block border border-grey-300 rounded-lg p-2 text-gray-300"
+          className="block border border-grey-300 rounded-lg p-2 text-gray-100"
         >
           logo
         </Link>
