@@ -1,6 +1,6 @@
-import { ResponsePlace } from "@/lib/types/place";
+import { ResponsePlaceCity } from "@/lib/types/placeCity";
 
-export const placeResponse: ResponsePlace = {
+export const placeResponse: ResponsePlaceCity = {
   pageInfo: {
     page: 1,
     hasNext: 1,
@@ -11,13 +11,13 @@ export const placeResponse: ResponsePlace = {
   data: [
     {
       id: 1,
-      placeId: "hdaasdasdasdasas",
+      placeCityId: "hdaasdasdasdasas",
       name: "서울",
       subName: "서울",
     },
     {
       id: 2,
-      placeId: "asdasfasfasfas",
+      placeCityId: "asdasfasfasfas",
       name: "대전",
       subName: "대전",
     },

@@ -1,8 +1,8 @@
-import MobileHomeHeader from "./components/MobileHomeHeader";
+import MobileHomeHeader from "./components/header/MobileHomeHeader";
 import MobileNavigation from "@/components/common/MobileNavigation";
-import PlaceList from "./components/PlaceList";
+import PlaceCityList from "./components/placeCity/PlaceCityList";
 import React from "react";
-import SearchPlace from "./components/SearchPlace";
+import SearchBar from "../../../components/common/search/SearchBar";
 
 const page = async () => {
   return (
@@ -10,11 +10,11 @@ const page = async () => {
       <div className="flex flex-col p-4 pb-20 gap-6">
         <MobileHomeHeader />
 
-        <SearchPlace />
+        <SearchBar placeholder="여행지를 선택해주세요." />
 
-        <PlaceList placeType="TRAVEL" moreHref="/travel" />
-        <PlaceList placeType="CITY" moreHref="/city" />
-        <PlaceList placeType="THEME" moreHref="/theme" />
+        <PlaceCityList placeCityType="TRAVEL" moreHref="/travel" />
+        <PlaceCityList placeCityType="CITY" moreHref="/city" />
+        <PlaceCityList placeCityType="THEME" moreHref="/theme" />
 
         {/* <TravelStoryList />
 

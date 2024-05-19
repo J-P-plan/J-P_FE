@@ -1,13 +1,13 @@
 import Image from "next/image";
-import { Place } from "@/lib/types/place";
+import { PlaceCity } from "@/lib/types/placeCity";
 import React from "react";
 
 interface Props {
-  place: Place;
+  placeCity: PlaceCity;
   priority?: boolean;
 }
 
-const TravelItem = ({ place, priority }: Props) => {
+const PlaceTrendingItem = ({ placeCity, priority }: Props) => {
   const img = "https://www.ghibli.jp/gallery/ponyo016.jpg";
   return (
     <li className="flex-none flex items-center flex-col gap-2">
@@ -21,14 +21,14 @@ const TravelItem = ({ place, priority }: Props) => {
       />
       <div className="flex flex-col gap-1">
         <p className="text-sm font-bold leading-[normal] capitalize">
-          {place.name}
+          {placeCity.name}
         </p>
         <p className="text-[#666] text-xs font-bold leading-[normal] capitalize">
-          {place.subName}
+          {placeCity.subName}
         </p>
       </div>
     </li>
   );
 };
 
-export default TravelItem;
+export default PlaceTrendingItem;

@@ -1,13 +1,13 @@
 import Image from "next/image";
-import { Place } from "@/lib/types/place";
+import { PlaceCity } from "@/lib/types/placeCity";
 import React from "react";
 
 interface Props {
-  place: Place;
+  placeCity: PlaceCity;
   priority?: boolean;
 }
 
-const CityItem = ({ place, priority }: Props) => {
+const CityTrendingItem = ({ placeCity, priority }: Props) => {
   const img = "https://www.ghibli.jp/gallery/ponyo016.jpg";
   return (
     <li className="flex-none flex items-center gap-4 relative">
@@ -20,10 +20,10 @@ const CityItem = ({ place, priority }: Props) => {
         priority={priority}
       />
       <p className="absolute right-4 bottom-3 text-white font-bold leading-[normal] capitalize">
-        {place.name}
+        {placeCity.name}
       </p>
     </li>
   );
 };
 
-export default CityItem;
+export default CityTrendingItem;

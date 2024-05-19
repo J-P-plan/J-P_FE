@@ -1,4 +1,4 @@
-export interface IResponseTravelStory {
+export interface ResponseTravelLog {
   pageInfo: {
     page: number;
     hasNext: number;
@@ -6,10 +6,10 @@ export interface IResponseTravelStory {
     totalElements: number;
     totalPages: number;
   };
-  data: ITravelStory[];
+  data: TravelLog[];
 }
 
-export interface ITravelStory {
+export interface TravelLog {
   id: number;
   isLike: boolean;
   likeCount: number;
@@ -21,7 +21,7 @@ export interface ITravelStory {
   userImageSrc: string;
 }
 
-export interface IResponseReview {
+export interface ResponseReview {
   pageInfo: {
     page: number;
     hasNext: number;
@@ -29,10 +29,10 @@ export interface IResponseReview {
     totalElements: number;
     totalPages: number;
   };
-  data: IReview[];
+  data: Review[];
 }
 
-export interface IReview {
+export interface Review {
   id: number;
   score: number;
   commentCount: number;

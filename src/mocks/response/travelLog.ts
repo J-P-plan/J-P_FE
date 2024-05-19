@@ -1,6 +1,6 @@
-import { IResponseTravelStory } from "@/lib/types/travel";
+import { ResponseTravelLog } from "@/lib/types/reviewTravel";
 
-export const travelStoryResponse: IResponseTravelStory = {
+export const travelStoryResponse: ResponseTravelLog = {
   pageInfo: {
     page: 1,
     hasNext: 1,

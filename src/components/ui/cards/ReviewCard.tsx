@@ -1,11 +1,11 @@
 "use client";
 
 import Card from "./context/CardProvider";
-import { IReview } from "@/lib/types/travel";
 import React from "react";
+import { Review } from "@/lib/types/reviewTravel";
 
 interface Props {
-  review: IReview;
+  review: Review;
 }
 
 const ReviewCard = ({ review }: Props) => {
