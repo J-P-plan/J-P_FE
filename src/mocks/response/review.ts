@@ -1,6 +1,6 @@
-import { IResponseReview } from "@/lib/types/travel";
+import { ResponseReview } from "@/lib/types/reviewTravel";
 
-export const reviewResponse: IResponseReview = {
+export const reviewResponse: ResponseReview = {
   pageInfo: {
     page: 1,
     hasNext: 1,

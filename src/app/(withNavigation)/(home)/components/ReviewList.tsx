@@ -1,12 +1,12 @@
-import { IResponseReview } from "@/lib/types/travel";
 import React from "react";
+import { ResponseReview } from "@/lib/types/reviewTravel";
 import ReviewCard from "@/components/ui/cards/ReviewCard";
 import WithTitleWrapper from "@/components/common/WithTitleWrapper";
 
 async function getReviews() {
   const response = await fetch(`${process.env.API_HOST}/review`);
 
-  const reviews: IResponseReview = await response.json();
+  const reviews: ResponseReview = await response.json();
 
   return reviews;
 }

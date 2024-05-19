@@ -1,11 +1,11 @@
-export interface GetPlaceDTO {
+export interface GetPlaceCityDTO {
   page: number;
   placeType?: "CITY" | "TRAVEL" | "THEME";
   searchString?: string;
   elementCnt?: number;
 }
 
-export interface ResponsePlace {
+export interface ResponsePlaceCity {
   pageInfo: {
     page: number;
     hasNext: number;
@@ -13,12 +13,12 @@ export interface ResponsePlace {
     totalElements: number;
     totalPages: number;
   };
-  data: Place[];
+  data: PlaceCity[];
 }
 
-export interface Place {
+export interface PlaceCity {
   id: number;
-  placeId: string;
+  placeCityId: string;
   name: string;
   subName: string;
 }

@@ -1,17 +1,17 @@
 "use client";
 
 import Card from "./context/CardProvider";
-import { ITravelStory } from "@/lib/types/travel";
 import React from "react";
+import { TravelLog } from "@/lib/types/reviewTravel";
 
 interface Props {
-  story: ITravelStory;
+  travelLog: TravelLog;
 }
 
-const TravelStoryCard = ({ story }: Props) => {
+const TravelLogCard = ({ travelLog }: Props) => {
   return (
     <div className="flex items-center gap-4 px-4 py-4 border rounded-md bg-white">
-      <Card card={story}>
+      <Card card={travelLog}>
         <Card.CardImage />
         <div className="flex flex-col gap-2 flex-1">
           <Card.CardTags />
@@ -29,4 +29,4 @@ const TravelStoryCard = ({ story }: Props) => {
   );
 };
 
-export default TravelStoryCard;
+export default TravelLogCard;
