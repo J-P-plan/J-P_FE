@@ -1,7 +1,34 @@
+"use client";
+import MobileHomeHeader from "../../components/header/MobileHomeHeader";
+import MobileNavigation from "@/components/common/MobileNavigation";
+import PlaceList from "../components/PlaceList";
+import { usePathname } from 'next/navigation';
 import React from "react";
 
+type PlaceCityType = {
+  "place-theme": string;
+  "place-trending": string;
+  "city-trending": string;
+};
+
+const placeCityType: PlaceCityType = {
+  "place-theme": "THEME",
+  "place-trending": "TRAVEL",
+  "city-trending": "CITY",
+};
+
 const page = () => {
-  return <div>page</div>;
+  const pathname = usePathname();
+  const key = pathname.split('/')[1] as keyof PlaceCityType; // Ensuring key is one of the keys of PlaceCityType
+  return (
+    <main>
+      <MobileHomeHeader />
+      <div className="flex p-4" style={{flexWrap:"wrap"}}>
+        <PlaceList placeCityType={placeCityType[key] as "THEME" | "TRAVEL" | "CITY"} />
+      </div>
+      <MobileNavigation />
+    </main>
+  );
 };
 
 export default page;

@@ -36,7 +36,13 @@
     }
   },
   "rules": {
-    "sort-imports": "error",
+    "sort-imports": ["error", {
+      "ignoreCase": false,
+      "ignoreDeclarationSort": false,
+      "ignoreMemberSort": false,
+      "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+      "allowSeparatedGroups": false
+  }],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "@typescript-eslint/no-unused-vars": "error",
@@ -45,8 +51,13 @@
     "prettier/prettier": [
       "error",
       {
-        "endOfLine": "auto"
-      }
+        "singleQuote": true,
+        "parser": "flow",
+        "endOfLine": "auto",
+      },
+      {
+        "usePrettierrc": false
+      },
     ],
     "react/no-unescaped-entities": "off"
   }
