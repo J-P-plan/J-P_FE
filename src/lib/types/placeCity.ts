@@ -1,24 +1,23 @@
+import { PageInfo } from "./common";
+
 export interface GetPlaceCityDTO {
   page: number;
-  placeType?: "CITY" | "TRAVEL" | "THEME";
+  placeType?: PlaceCityType;
   searchString?: string;
   elementCnt?: number;
 }
 
+export type PlaceCityType = "CITY" | "TRAVEL_PLACE" | "THEME";
+
 export interface ResponsePlaceCity {
-  pageInfo: {
-    page: number;
-    hasNext: number;
-    hasPrevious: number;
-    totalElements: number;
-    totalPages: number;
-  };
+  pageInfo: PageInfo;
   data: PlaceCity[];
 }
 
 export interface PlaceCity {
   id: number;
-  placeCityId: string;
+  placeId: string;
   name: string;
   subName: string;
+  photoUrl: string | null;
 }

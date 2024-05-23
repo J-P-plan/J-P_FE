@@ -12,9 +12,12 @@ const page = async () => {
 
         <SearchBar placeholder="여행지를 선택해주세요." />
 
-        <PlaceCityList placeCityType="TRAVEL" moreHref="/travel" />
-        <PlaceCityList placeCityType="CITY" moreHref="/city" />
-        <PlaceCityList placeCityType="THEME" moreHref="/theme" />
+        <PlaceCityList
+          placeCityType="TRAVEL_PLACE"
+          moreHref="/place-trending"
+        />
+        <PlaceCityList placeCityType="CITY" moreHref="/city-trending" />
+        <PlaceCityList placeCityType="THEME" moreHref="/place-theme" />
 
         {/* <TravelStoryList />
 

@@ -1,8 +1,9 @@
 import CityTrendingItem from "./CityTrendingItem";
-import { PlaceAPI } from "@/lib/api/placeCity";
+import { PlaceCityAPI } from "@/lib/api/placeCity";
+import { PlaceCityType } from "@/lib/types/placeCity";
+import PlaceThemeItem from "./PlaceThemeItem";
+import PlaceTrendingItem from "./PlaceTrendingItem";
 import React from "react";
-import ThemeItem from "./PlaceThemeItem";
-import TravelItem from "./PlaceTrendingItem";
 import WithTitleWrapper from "@/components/common/WithTitleWrapper";
 
 const PlaceCityMap = {
@@ -10,23 +11,23 @@ const PlaceCityMap = {
     component: CityTrendingItem,
     title: "인기 여행 도시",
   },
-  TRAVEL: {
-    component: TravelItem,
+  TRAVEL_PLACE: {
+    component: PlaceTrendingItem,
     title: "지금 가장 인기있는 여행지",
   },
   THEME: {
-    component: ThemeItem,
+    component: PlaceThemeItem,
     title: "지금가면 좋은 여행지",
   },
 };
 
 interface Props {
-  placeCityType: "CITY" | "TRAVEL" | "THEME";
+  placeCityType: PlaceCityType;
   moreHref: string;
 }
 
 const PlaceCityList = async ({ placeCityType, moreHref }: Props) => {
-  const { data: placeCities } = await PlaceAPI.getPlace({
+  const { data: placeCities } = await PlaceCityAPI.getPlaceCitys({
     page: 1,
     placeType: placeCityType,
     elementCnt: 10,
@@ -39,7 +40,7 @@ const PlaceCityList = async ({ placeCityType, moreHref }: Props) => {
       <ul className="flex overflow-x-auto space-x-2 ">
         {placeCities.map((placeCity, index) => (
           <placeCityItem.component
-            key={placeCity.placeCityId}
+            key={placeCity.placeId}
             placeCity={placeCity}
             priority={index < 5}
           />

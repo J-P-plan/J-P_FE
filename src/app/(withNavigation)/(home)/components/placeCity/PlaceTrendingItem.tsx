@@ -13,7 +13,7 @@ const PlaceTrendingItem = ({ placeCity, priority }: Props) => {
     <li className="flex-none flex items-center flex-col gap-2">
       <Image
         src={img}
-        alt="travel"
+        alt={placeCity.name + "이미지"}
         className="w-30 h-30 object-cover rounded-lg"
         width={120}
         height={120}

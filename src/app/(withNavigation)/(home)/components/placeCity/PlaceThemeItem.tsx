@@ -13,7 +13,7 @@ const PlaceThemeItem = ({ placeCity, priority }: Props) => {
     <li className="flex-none flex items-center relative">
       <Image
         src={img}
-        alt="travel"
+        alt={placeCity.name + "이미지"}
         className="w-36 h-32 object-cover rounded-lg"
         width={144}
         height={128}
