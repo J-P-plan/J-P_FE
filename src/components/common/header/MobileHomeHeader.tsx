@@ -1,5 +1,5 @@
 import BellIcon from "@/components/icons/BellIcon";
-import Header from "@/components/common/Header";
+import Header from "./Header";
 import Link from "next/link";
 import React from "react";
 

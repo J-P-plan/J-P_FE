@@ -1,17 +1,18 @@
 "use client";
 
-import CalendarIcon from "../icons/CalendarIcon";
-import HomeIcon from "../icons/HomeIcon";
+import CalendarIcon from "@/components/icons/CalendarIcon";
+import HomeIcon from "@/components/icons/HomeIcon";
 import Link from "next/link";
-import MessageIcon from "../icons/MessageIcon";
-import ProfileIcon from "../icons/ProfileIcon";
-import React from "react";
-import SearchIcon from "../icons/SearchIcon";
+import MessageIcon from "@/components/icons/MessageIcon";
+import ProfileIcon from "@/components/icons/ProfileIcon";
+import SearchIcon from "@/components/icons/SearchIcon";
 import { usePathname } from "next/navigation";
+
+// TODO: white list를 만들어 navigation highlight 처리
 
 // 임시 경로(논의 필요)
 const Menus = [
-  { name: "홈", icon: HomeIcon, href: "/home" },
+  { name: "홈", icon: HomeIcon, href: "/" },
   { name: "검색", icon: SearchIcon, href: "/search" },
   { name: "일정", icon: CalendarIcon, href: "/plan" },
   { name: "리뷰", icon: MessageIcon, href: "/review" },
