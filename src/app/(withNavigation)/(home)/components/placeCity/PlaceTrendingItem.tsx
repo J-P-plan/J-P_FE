@@ -1,16 +1,18 @@
 import Image from "next/image";
 import { PlaceCity } from "@/lib/types/placeCity";
 import React from "react";
+import { cn } from "@/lib/utils/cn";
 
 interface Props {
   placeCity: PlaceCity;
   priority?: boolean;
+  className?: string;
 }
 
-const PlaceTrendingItem = ({ placeCity, priority }: Props) => {
+const PlaceTrendingItem = ({ placeCity, priority, className }: Props) => {
   const img = "https://www.ghibli.jp/gallery/ponyo016.jpg";
   return (
-    <li className="flex flex-none flex-col gap-2">
+    <li className={cn("flex flex-none flex-col gap-2", className)}>
       <Image
         src={img}
         alt={placeCity.name + "이미지"}

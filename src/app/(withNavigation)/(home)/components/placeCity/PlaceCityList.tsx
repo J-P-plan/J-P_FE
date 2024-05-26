@@ -37,12 +37,13 @@ const PlaceCityList = async ({ placeCityType, moreHref }: Props) => {
 
   return (
     <WithTitleWrapper title={placeCityItem.title} moreHref={moreHref}>
-      <ul className="flex gap-2 overflow-x-auto scrollbar-hide">
+      <ul className="flex snap-x snap-mandatory gap-2 overflow-x-auto scrollbar-hide ">
         {placeCities.map((placeCity, index) => (
           <placeCityItem.component
             key={placeCity.placeId}
             placeCity={placeCity}
             priority={index < 5}
+            className="snap-start"
           />
         ))}
       </ul>
