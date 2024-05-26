@@ -4,7 +4,7 @@ import { PlaceCityType } from "@/lib/types/placeCity";
 import PlaceThemeItem from "./PlaceThemeItem";
 import PlaceTrendingItem from "./PlaceTrendingItem";
 import React from "react";
-import WithTitleWrapper from "@/components/common/WithTitleWrapper";
+import WithTitleWrapper from "@/components/common/wrapper/WithTitleWrapper";
 
 const PlaceCityMap = {
   CITY: {
@@ -37,7 +37,7 @@ const PlaceCityList = async ({ placeCityType, moreHref }: Props) => {
 
   return (
     <WithTitleWrapper title={placeCityItem.title} moreHref={moreHref}>
-      <ul className="flex space-x-2 overflow-x-auto ">
+      <ul className="flex gap-2 overflow-x-auto scrollbar-hide">
         {placeCities.map((placeCity, index) => (
           <placeCityItem.component
             key={placeCity.placeId}

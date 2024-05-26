@@ -10,7 +10,7 @@ interface Props {
 const PlaceThemeItem = ({ placeCity, priority }: Props) => {
   const img = "https://www.ghibli.jp/gallery/ponyo016.jpg";
   return (
-    <li className="flex flex-none flex-col items-center gap-2">
+    <li className="flex flex-none flex-col gap-2">
       <Image
         src={img}
         alt={placeCity.name + "이미지"}

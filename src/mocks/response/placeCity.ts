@@ -23,5 +23,19 @@ export const placeResponse: ResponsePlaceCity = {
       subName: "대전",
       photoUrl: null,
     },
+    {
+      id: 3,
+      placeId: "asdasfass",
+      name: "인천",
+      subName: "인천",
+      photoUrl: null,
+    },
+    {
+      id: 4,
+      placeId: "asdasfas212sfas",
+      name: "동해",
+      subName: "강원도",
+      photoUrl: null,
+    },
   ],
 };
