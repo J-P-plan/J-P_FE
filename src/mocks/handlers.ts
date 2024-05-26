@@ -1,5 +1,5 @@
-import { getPlaces } from "./handlers/place";
+import { getPlaceCitys } from "./handlers/placeCity";
 import { getReviews } from "./handlers/review";
-import { getTravelStories } from "./handlers/travelLog";
+import { getTravelLogs } from "./handlers/travelLog";
 
-export const handlers = [getPlaces, getTravelStories, getReviews];
+export const handlers = [getTravelLogs, getReviews, getPlaceCitys];

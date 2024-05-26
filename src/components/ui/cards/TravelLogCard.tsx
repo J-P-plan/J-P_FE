@@ -2,7 +2,7 @@
 
 import Card from "./context/CardProvider";
 import React from "react";
-import { TravelLog } from "@/lib/types/reviewTravel";
+import { TravelLog } from "@/lib/types/travelLog";
 
 interface Props {
   travelLog: TravelLog;

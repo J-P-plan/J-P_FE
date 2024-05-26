@@ -1,6 +1,6 @@
-import { ResponseTravelLog } from "@/lib/types/reviewTravel";
+import { ResponseTravelLog } from "@/lib/types/travelLog";
 
-export const travelStoryResponse: ResponseTravelLog = {
+export const travelLogResponse: ResponseTravelLog = {
   pageInfo: {
     page: 1,
     hasNext: 1,

@@ -11,15 +11,17 @@ export const placeResponse: ResponsePlaceCity = {
   data: [
     {
       id: 1,
-      placeCityId: "hdaasdasdasdasas",
+      placeId: "hdaasdasdasdasas",
       name: "서울",
       subName: "서울",
+      photoUrl: null,
     },
     {
       id: 2,
-      placeCityId: "asdasfasfasfas",
+      placeId: "asdasfasfasfas",
       name: "대전",
       subName: "대전",
+      photoUrl: null,
     },
   ],
 };

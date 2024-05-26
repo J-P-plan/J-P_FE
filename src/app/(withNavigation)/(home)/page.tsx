@@ -2,7 +2,9 @@ import MobileHomeHeader from "./components/header/MobileHomeHeader";
 import MobileNavigation from "@/components/common/MobileNavigation";
 import PlaceCityList from "./components/placeCity/PlaceCityList";
 import React from "react";
+import ReviewList from "./components/ReviewList";
 import SearchBar from "../../../components/common/search/SearchBar";
+import TravelLogList from "./components/TravleLogList";
 
 const page = async () => {
   return (
@@ -19,9 +21,8 @@ const page = async () => {
         <PlaceCityList placeCityType="CITY" moreHref="/city-trending" />
         <PlaceCityList placeCityType="THEME" moreHref="/place-theme" />
 
-        {/* <TravelStoryList />
-
-        <ReviewList /> */}
+        <TravelLogList />
+        <ReviewList />
       </div>
       <MobileNavigation />
     </main>

@@ -1,4 +1,4 @@
-import { ResponseReview } from "@/lib/types/reviewTravel";
+import { ResponseReview } from "@/lib/types/review";
 
 export const reviewResponse: ResponseReview = {
   pageInfo: {
