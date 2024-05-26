@@ -1,4 +1,4 @@
-import { Button } from "../../button";
+import { Button } from "../../../ui/button";
 import React from "react";
 import StarIcon from "@/components/icons/StartIcon";
 import { cn } from "@/lib/utils/cn";
@@ -8,7 +8,7 @@ const StarButton = React.forwardRef<
   HTMLButtonElement,
   React.HTMLAttributes<HTMLButtonElement>
 >(({ className, ...props }, ref) => {
-  const { score } = useCardContext();
+  const { star } = useCardContext();
 
   return (
     // [todo]: change click event to update like Api
@@ -20,7 +20,7 @@ const StarButton = React.forwardRef<
       {...props}
     >
       <StarIcon className="size-4" />
-      <span className="flex items-center text-xs text-[#b8b8b8]">{score}</span>
+      <span className="flex items-center text-xs text-[#b8b8b8]">{star}</span>
     </Button>
   );
 });

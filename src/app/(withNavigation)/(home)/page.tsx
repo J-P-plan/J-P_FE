@@ -1,7 +1,7 @@
 import MobileHomeHeader from "../../../components/common/header/MobileHomeHeader";
 import PlaceCityList from "./components/placeCity/PlaceCityList";
 import React from "react";
-import ReviewList from "./components/ReviewList";
+import ReviewList from "./components/review/ReviewList";
 import SearchBar from "../../../components/common/search/SearchBar";
 import TravelLogList from "./components/TravleLogList";
 

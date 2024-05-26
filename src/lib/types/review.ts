@@ -7,11 +7,17 @@ export interface ResponseReview {
 
 export interface Review {
   id: number;
-  score: number;
-  commentCount: number;
+  subject: string;
+  content: string;
+  userCompactResDto: UserCompactResDto;
+  commentCnt: number;
+  star: number;
+  placeId: string;
   imageSrc: string;
-  title: string;
-  description: string;
-  userName: string;
-  userImageSrc: string;
+}
+
+export interface UserCompactResDto {
+  id: number;
+  nickname: string;
+  picture: string;
 }

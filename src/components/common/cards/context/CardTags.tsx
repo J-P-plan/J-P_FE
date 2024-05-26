@@ -1,5 +1,5 @@
 import React from "react";
-import { Tag } from "../../Tag";
+import { Tag } from "../../../ui/Tag";
 import { cn } from "@/lib/utils/cn";
 import { useCardContext } from "./CardProvider";
 
