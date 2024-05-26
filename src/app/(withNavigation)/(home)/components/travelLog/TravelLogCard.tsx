@@ -1,8 +1,8 @@
 "use client";
 
-import Card from "./context/CardProvider";
+import Card from "@/components/common/cards/context/CardProvider";
 import React from "react";
-import { TravelLog } from "@/lib/types/reviewTravel";
+import { TravelLog } from "@/lib/types/travelLog";
 
 interface Props {
   travelLog: TravelLog;
@@ -10,15 +10,15 @@ interface Props {
 
 const TravelLogCard = ({ travelLog }: Props) => {
   return (
-    <div className="flex items-center gap-4 px-4 py-4 border rounded-md bg-white">
+    <div className="flex items-center gap-4 rounded-md">
       <Card card={travelLog}>
         <Card.CardImage />
-        <div className="flex flex-col gap-2 flex-1">
+        <div className="flex flex-1 flex-col gap-2 overflow-hidden">
           <Card.CardTags />
           <Card.CardTitle />
           <div className="flex w-full items-center justify-between">
             <Card.UserInfo />
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2">
               <Card.LikeButton />
               <Card.CommandButton />
             </div>

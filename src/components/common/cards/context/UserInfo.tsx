@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from "../../avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "../../../ui/avatar";
 
 import React from "react";
 import { cn } from "@/lib/utils/cn";
@@ -20,7 +20,7 @@ const UserInfo = React.forwardRef<
         {/* [TODO]: change userName -> loading image */}
         <AvatarFallback>{userName}</AvatarFallback>
       </Avatar>
-      <div className="flex items-center text-[#1a1a1a] text-xs">{userName}</div>
+      <div className="flex items-center text-xs text-[#1a1a1a]">{userName}</div>
     </div>
   );
 });

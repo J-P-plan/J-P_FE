@@ -1,17 +1,18 @@
 "use client";
 
-import CalendarIcon from "../icons/CalendarIcon";
-import HomeIcon from "../icons/HomeIcon";
+import CalendarIcon from "@/components/icons/CalendarIcon";
+import HomeIcon from "@/components/icons/HomeIcon";
 import Link from "next/link";
-import MessageIcon from "../icons/MessageIcon";
-import ProfileIcon from "../icons/ProfileIcon";
-import React from "react";
-import SearchIcon from "../icons/SearchIcon";
+import MessageIcon from "@/components/icons/MessageIcon";
+import ProfileIcon from "@/components/icons/ProfileIcon";
+import SearchIcon from "@/components/icons/SearchIcon";
 import { usePathname } from "next/navigation";
+
+// TODO: white list를 만들어 navigation highlight 처리
 
 // 임시 경로(논의 필요)
 const Menus = [
-  { name: "홈", icon: HomeIcon, href: "/home" },
+  { name: "홈", icon: HomeIcon, href: "/" },
   { name: "검색", icon: SearchIcon, href: "/search" },
   { name: "일정", icon: CalendarIcon, href: "/plan" },
   { name: "리뷰", icon: MessageIcon, href: "/review" },
@@ -22,13 +23,13 @@ const MobileNavigation = () => {
   const pathname = usePathname();
 
   return (
-    <div className="w-full py-2 px-4 mx-auto bg-white fixed bottom-0">
+    <div className="fixed bottom-0 mx-auto w-full bg-white px-4 py-2">
       <ul className="flex justify-between">
         {Menus.map(menu => (
           <li className="min-w-12" key={menu.name}>
             <Link
               href={menu.href}
-              className="flex flex-col justify-center items-center text-center"
+              className="flex flex-col items-center justify-center text-center"
             >
               <span>
                 <menu.icon
@@ -39,8 +40,8 @@ const MobileNavigation = () => {
               <p
                 className={`text-center text-[10px] leading-5 ${
                   pathname === menu.href
-                    ? "text-[#FFC814] font-bold"
-                    : "text-[#4D4D4D] font-bold"
+                    ? "font-bold text-[#FFC814]"
+                    : "font-bold text-[#4D4D4D]"
                 } `}
               >
                 {menu.name}

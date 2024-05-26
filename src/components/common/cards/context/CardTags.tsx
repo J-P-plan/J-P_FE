@@ -1,5 +1,5 @@
 import React from "react";
-import { Tag } from "../../Tag";
+import { Tag } from "../../../ui/Tag";
 import { cn } from "@/lib/utils/cn";
 import { useCardContext } from "./CardProvider";
 
@@ -12,12 +12,15 @@ const CardTags = React.forwardRef<
   return (
     <div
       ref={ref}
-      className={cn("flex items-center gap-2", className)}
+      className={cn(
+        "grid w-full auto-cols-max grid-flow-col gap-2 overflow-scroll scrollbar-hide",
+        className
+      )}
       {...props}
     >
       {tagList?.map(tag => (
         <Tag key={tag} variant="outline">
-          <p className="flex justify-center items-center text-[#4d4d4d] text-xs">
+          <p className="flex items-center justify-center text-xs text-[#4d4d4d]">
             {tag}
           </p>
         </Tag>

@@ -4,7 +4,9 @@ let triggered = false;
 
 async function enableApiMocking() {
   const { worker } = await import("../mocks/browser");
-  await worker.start();
+  if (process.env.NODE_ENV === "development") {
+    await worker.start();
+  }
 }
 
 export function MockProvider() {

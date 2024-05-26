@@ -1,27 +1,28 @@
-import MobileHomeHeader from "./components/header/MobileHomeHeader";
-import MobileNavigation from "@/components/common/MobileNavigation";
+import MobileHomeHeader from "../../../components/common/header/MobileHomeHeader";
 import PlaceCityList from "./components/placeCity/PlaceCityList";
 import React from "react";
+import ReviewList from "./components/review/ReviewList";
 import SearchBar from "../../../components/common/search/SearchBar";
+import TravelLogList from "./components/travelLog/TravleLogList";
 
 const page = async () => {
   return (
-    <main>
-      <div className="flex flex-col p-4 pb-20 gap-6">
-        <MobileHomeHeader />
-
+    <>
+      <MobileHomeHeader />
+      <main className="flex flex-col gap-6 px-4 py-20">
         <SearchBar placeholder="여행지를 선택해주세요." />
 
-        <PlaceCityList placeCityType="TRAVEL" moreHref="/travel" />
-        <PlaceCityList placeCityType="CITY" moreHref="/city" />
-        <PlaceCityList placeCityType="THEME" moreHref="/theme" />
+        <PlaceCityList
+          placeCityType="TRAVEL_PLACE"
+          moreHref="/place-trending"
+        />
+        <PlaceCityList placeCityType="CITY" moreHref="/city-trending" />
+        <PlaceCityList placeCityType="THEME" moreHref="/place-theme" />
 
-        {/* <TravelStoryList />
-
-        <ReviewList /> */}
-      </div>
-      <MobileNavigation />
-    </main>
+        <TravelLogList />
+        <ReviewList />
+      </main>
+    </>
   );
 };
 

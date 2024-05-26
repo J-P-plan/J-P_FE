@@ -1,10 +1,10 @@
 import { HttpResponse, http } from "msw";
 
-import { travelStoryResponse } from "../response/travelLog";
+import { travelLogResponse } from "../response/travelLog";
 
-export const getTravelStories = http.get(
-  `${process.env.API_HOST}/travel-log`,
+export const getTravelLogs = http.get(
+  `${process.env.API_HOST}/travel-logs`,
   () => {
-    return HttpResponse.json(travelStoryResponse);
+    return HttpResponse.json(travelLogResponse);
   }
 );

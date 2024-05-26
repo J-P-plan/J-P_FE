@@ -88,11 +88,11 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps & IconProps>(
         {...props}
       >
         {icon && iconPlacement === "left" && (
-          <div className="w-full h-full">{icon}</div>
+          <div className="size-full">{icon}</div>
         )}
         {props.children}
         {icon && iconPlacement === "right" && (
-          <div className="w-full h-full">{icon}</div>
+          <div className="size-full">{icon}</div>
         )}
       </Comp>
     );

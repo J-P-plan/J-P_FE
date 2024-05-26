@@ -1,5 +1,5 @@
 import BellIcon from "@/components/icons/BellIcon";
-import Header from "@/components/common/Header";
+import Header from "./Header";
 import Link from "next/link";
 import React from "react";
 
@@ -9,7 +9,7 @@ const MobileHomeHeader = () => {
       leftNode={
         <Link
           href="/home"
-          className="block border border-grey-300 rounded-lg p-2 text-gray-300"
+          className="block rounded-lg border border-gray-300 p-2 text-gray-300"
         >
           logo
         </Link>

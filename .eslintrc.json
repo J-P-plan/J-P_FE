@@ -10,7 +10,8 @@
     "plugin:prettier/recommended",
     "next/core-web-vitals",
     "prettier",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
+    "plugin:tailwindcss/recommended"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -28,6 +29,10 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "tailwindcss": {
+      "callees": ["classnames", "clsx", "cn"],
+      "tags": ["tw"]
     }
   },
   "rules": {
