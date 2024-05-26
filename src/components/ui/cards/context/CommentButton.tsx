@@ -15,13 +15,13 @@ const CommentButton = React.forwardRef<
       size="icon"
       variant="ghost"
       className={cn(
-        "flex items-center align-baseline gap-1 text-[#b8b8b8] text-xs",
+        "flex items-center gap-1 align-baseline text-xs text-[#b8b8b8]",
         className
       )}
       onClick={() => {}}
       {...props}
     >
-      <CommentIcon className="w-4 h-4" />
+      <CommentIcon className="size-4" />
       {commentCount}
     </Button>
   );

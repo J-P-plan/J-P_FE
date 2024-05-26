@@ -22,13 +22,13 @@ const MobileNavigation = () => {
   const pathname = usePathname();
 
   return (
-    <div className="w-full py-2 px-4 mx-auto bg-white fixed bottom-0">
+    <div className="fixed bottom-0 mx-auto w-full bg-white px-4 py-2">
       <ul className="flex justify-between">
         {Menus.map(menu => (
           <li className="min-w-12" key={menu.name}>
             <Link
               href={menu.href}
-              className="flex flex-col justify-center items-center text-center"
+              className="flex flex-col items-center justify-center text-center"
             >
               <span>
                 <menu.icon
@@ -39,8 +39,8 @@ const MobileNavigation = () => {
               <p
                 className={`text-center text-[10px] leading-5 ${
                   pathname === menu.href
-                    ? "text-[#FFC814] font-bold"
-                    : "text-[#4D4D4D] font-bold"
+                    ? "font-bold text-[#FFC814]"
+                    : "font-bold text-[#4D4D4D]"
                 } `}
               >
                 {menu.name}

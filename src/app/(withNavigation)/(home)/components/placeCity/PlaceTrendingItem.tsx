@@ -10,20 +10,20 @@ interface Props {
 const PlaceTrendingItem = ({ placeCity, priority }: Props) => {
   const img = "https://www.ghibli.jp/gallery/ponyo016.jpg";
   return (
-    <li className="flex-none flex items-center flex-col gap-2">
+    <li className="flex flex-none flex-col items-center gap-2">
       <Image
         src={img}
         alt={placeCity.name + "이미지"}
-        className="w-30 h-30 object-cover rounded-lg"
+        className="size-30 rounded-lg object-cover"
         width={120}
         height={120}
         priority={priority}
       />
       <div className="flex flex-col gap-1">
-        <p className="text-sm font-bold leading-[normal] capitalize">
+        <p className="text-sm font-bold capitalize leading-[normal]">
           {placeCity.name}
         </p>
-        <p className="text-[#666] text-xs font-bold leading-[normal] capitalize">
+        <p className="text-xs font-bold capitalize leading-[normal] text-[#666]">
           {placeCity.subName}
         </p>
       </div>

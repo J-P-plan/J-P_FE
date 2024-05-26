@@ -9,9 +9,9 @@ const CardImage = React.forwardRef<
 >(({ className, ...props }, ref) => {
   const { imageSrc } = useCardContext();
   return (
-    <div className={cn("flex-shrink-0", className)} ref={ref}>
+    <div className={cn("shrink-0", className)} ref={ref}>
       <Image
-        className="h-20 w-20 object-cover rounded-lg"
+        className="size-20 rounded-lg object-cover"
         src={imageSrc || "https://www.ghibli.jp/gallery/ponyo016.jpg"}
         alt="Ponyo"
         width={80}

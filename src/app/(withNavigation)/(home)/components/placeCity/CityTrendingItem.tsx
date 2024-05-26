@@ -10,16 +10,16 @@ interface Props {
 const CityTrendingItem = ({ placeCity, priority }: Props) => {
   const img = "https://www.ghibli.jp/gallery/ponyo016.jpg";
   return (
-    <li className="flex-none flex items-center gap-4 relative">
+    <li className="relative flex flex-none items-center gap-4">
       <Image
         src={img}
         alt={placeCity.name + "이미지"}
-        className="w-30 h-30 object-cover rounded-lg"
+        className="size-30 rounded-lg object-cover"
         width={120}
         height={120}
         priority={priority}
       />
-      <p className="absolute right-4 bottom-3 text-white font-bold leading-[normal] capitalize">
+      <p className="absolute bottom-3 right-4 font-bold capitalize leading-[normal] text-white">
         {placeCity.name}
       </p>
     </li>

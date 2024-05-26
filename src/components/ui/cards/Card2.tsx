@@ -14,7 +14,7 @@ const Card2 = () => {
     userImageSrc: "https://www.ghibli.jp/gallery/ponyo016.jpg",
   };
   return (
-    <div className="flex flex-col gap-4 px-4 py-4 border rounded-md bg-white">
+    <div className="flex flex-col gap-4 rounded-md border bg-white p-4">
       <Card card={card}>
         <Card.UserInfo />
         <Card.CardTitle />

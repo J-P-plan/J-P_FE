@@ -19,8 +19,8 @@ const StarButton = React.forwardRef<
       className={cn("flex items-center gap-1", className)}
       {...props}
     >
-      <StarIcon className="w-4 h-4" />
-      <span className="flex items-center text-[#b8b8b8] text-xs">{score}</span>
+      <StarIcon className="size-4" />
+      <span className="flex items-center text-xs text-[#b8b8b8]">{score}</span>
     </Button>
   );
 });

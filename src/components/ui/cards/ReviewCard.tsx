@@ -10,10 +10,10 @@ interface Props {
 
 const ReviewCard = ({ review }: Props) => {
   return (
-    <div className="flex items-center gap-4 px-4 py-4 border rounded-md bg-white">
+    <div className="flex items-center gap-4 rounded-md border bg-white p-4">
       <Card card={review}>
         <Card.CardImage />
-        <div className="flex flex-col gap-2 flex-1">
+        <div className="flex flex-1 flex-col gap-2">
           <Card.CardTitle />
           <div className="flex w-full items-center justify-between">
             <Card.UserInfo />

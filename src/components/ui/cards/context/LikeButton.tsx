@@ -23,11 +23,11 @@ const LikeButton = React.forwardRef<
       {...props}
     >
       <HeartIcon
-        className="w-4 h-4"
+        className="size-4"
         fill={isLike ? "red" : "none"}
         stroke={isLike ? "red" : "#b8b8b8"}
       />
-      <span className="flex items-center text-[#b8b8b8] text-xs">
+      <span className="flex items-center text-xs text-[#b8b8b8]">
         {like ? likeCount! + 1 : likeCount}
       </span>
     </Button>

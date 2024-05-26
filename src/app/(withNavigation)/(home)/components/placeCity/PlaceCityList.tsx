@@ -37,7 +37,7 @@ const PlaceCityList = async ({ placeCityType, moreHref }: Props) => {
 
   return (
     <WithTitleWrapper title={placeCityItem.title} moreHref={moreHref}>
-      <ul className="flex overflow-x-auto space-x-2 ">
+      <ul className="flex space-x-2 overflow-x-auto ">
         {placeCities.map((placeCity, index) => (
           <placeCityItem.component
             key={placeCity.placeId}

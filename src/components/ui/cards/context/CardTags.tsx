@@ -17,7 +17,7 @@ const CardTags = React.forwardRef<
     >
       {tagList?.map(tag => (
         <Tag key={tag} variant="outline">
-          <p className="flex justify-center items-center text-[#4d4d4d] text-xs">
+          <p className="flex items-center justify-center text-xs text-[#4d4d4d]">
             {tag}
           </p>
         </Tag>
