@@ -91,6 +91,9 @@ const config = {
     require("tailwindcss-animate"),
     require("./tailwind_plugins/scrollbar-hide"),
   ],
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
 } satisfies Config;
 
 export default config;

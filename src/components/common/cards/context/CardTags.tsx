@@ -12,7 +12,10 @@ const CardTags = React.forwardRef<
   return (
     <div
       ref={ref}
-      className={cn("flex items-center gap-2", className)}
+      className={cn(
+        "grid w-full auto-cols-max grid-flow-col gap-2 overflow-scroll scrollbar-hide",
+        className
+      )}
       {...props}
     >
       {tagList?.map(tag => (

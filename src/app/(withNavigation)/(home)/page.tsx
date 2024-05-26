@@ -3,7 +3,7 @@ import PlaceCityList from "./components/placeCity/PlaceCityList";
 import React from "react";
 import ReviewList from "./components/review/ReviewList";
 import SearchBar from "../../../components/common/search/SearchBar";
-import TravelLogList from "./components/TravleLogList";
+import TravelLogList from "./components/travelLog/TravleLogList";
 
 const page = async () => {
   return (

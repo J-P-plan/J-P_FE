@@ -1,6 +1,6 @@
 import React from "react";
 import { TravelLogAPI } from "@/lib/api/travelLog";
-import TravelLogCard from "@/components/common/cards/TravelLogCard";
+import TravelLogCard from "./TravelLogCard";
 import WithTitleWrapper from "@/components/common/wrapper/WithTitleWrapper";
 
 const TravelLogList = async () => {
