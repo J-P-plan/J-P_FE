@@ -19,7 +19,7 @@ const SearchBar = ({ className, placeholder }: Props) => {
     <InputWithIcon
       Icon={<SearchIcon />}
       className={cn(
-        "rounded-full border border-[#e6e6e6] bg-white py-2 shadow-input",
+        "rounded-full border border-gray-200 bg-background py-2",
         className
       )}
       onChange={e => setQuery(e.target.value)}

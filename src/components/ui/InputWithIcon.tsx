@@ -12,7 +12,7 @@ const InputWithIcon = React.forwardRef<HTMLDivElement, InputWithIconProps>(
     return (
       <div
         className={cn(
-          "flex items-center gap-x-2 rounded-xl border border-gray-400 px-3 py-1 focus-within:border focus-within:border-[#a8a8a8]",
+          "flex items-center gap-x-2 rounded-lg border border-gray-400 px-3 py-1 focus-within:border focus-within:border-gray-300",
           className
         )}
         ref={ref}

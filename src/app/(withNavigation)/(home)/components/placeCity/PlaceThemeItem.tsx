@@ -16,7 +16,7 @@ const PlaceThemeItem = ({ placeCity, priority, className }: Props) => {
       <Image
         src={img}
         alt={placeCity.name + "이미지"}
-        className="size-30 rounded-lg object-cover"
+        className="size-[7.5rem] rounded-lg object-cover"
         width={120}
         height={120}
         priority={priority}
