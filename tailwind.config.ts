@@ -8,82 +8,61 @@ const config = {
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
   ],
-  prefix: "",
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
-      spacing: {
-        30: "7.5rem",
-      },
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "var(--color-primary)",
+          foreground: "var(--color-primary-light)",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "var(--color-secondary)",
+          foreground: "var(--color-secondary-light)",
         },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+        point: {
+          red: "var(--color-point-red)",
+          yellow: "var(--color-point-yellow)",
+          coral: "var(--color-point-coral)",
         },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+        background: {
+          DEFAULT: "var(--color-background-primary)",
+          foreground: "var(--color-background-secondary)",
         },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+        text: {
+          primary: "var(--color-text-primary)",
+          secondary: "var(--color-text-secondary)",
+          disabled: "var(--color-text-disabled)",
+          onPrimary: "var(--color-text-on-primary)",
         },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
+        white: "#FFFFFF",
+        black: "#000000",
+        gray: {
+          100: "#F2F2F2",
+          200: "#E6E6E6",
+          300: "#B8B8B8",
+          400: "#999999",
+          500: "#808080",
+          600: "#666666",
+          700: "#4D4D4D",
+          800: "#333333",
+          900: "#1A1A1A",
         },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
       },
       boxShadow: {
-        input: "0px 4px 15px 0px rgba(26, 26, 26, 0.05)",
-        menuOpen: "4.1px -5px 0 0 rgb(17,24,39)",
-        menuClose: "-4.1px -5px 0 0 rgb(17,24,39)",
+        mobileCard:
+          "0px 2px 10px rgba(0, 0, 0, 0.6), 0px 2px 10px rgba(0, 0, 0, 0.8) ",
+        desktopCard:
+          "2px 2px 10px rgba(0, 0, 0, 0.8), 2px 2px 20px rgba(0, 0, 0, 0.6)",
+        float:
+          "0px 6px 10px rgba(0, 0, 0, 0.8), 0px 4px 10px rgba(0, 0, 0, 0.8)",
+        active:
+          "0px 6px 12px 0px rgba(105, 121, 248, 0.12), 0px 2px 10px 0px rgba(105, 121, 248, 0.12)",
+        bottomSheet:
+          "0px 0px 20px 0px rgba(0, 0, 0, 0.08), 0px 0px 12px 0px rgba(0, 0, 0, 0.08)",
       },
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-        shine: {
-          from: { backgroundPosition: "200% 0" },
-          to: { backgroundPosition: "-200% 0" },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        shine: "shine 8s ease-in-out infinite",
+      borderRadius: {
+        normal: "1rem",
+        large: "2rem",
       },
     },
   },

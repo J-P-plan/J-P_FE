@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils/cn";
 import { cva } from "class-variance-authority";
 
 const headerVariants = cva(
-  "fixed top-0 left-0 z-50 flex h-auto w-full items-center justify-between p-4   bg-white transition-transform duration-300",
+  "fixed top-0 left-0 z-50 flex h-auto w-full items-center justify-between p-4 bg-white transition-transform duration-300",
   {
     variants: {
       isVisible: {
