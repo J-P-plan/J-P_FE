@@ -15,7 +15,7 @@ const CommentButton = React.forwardRef<
       size="icon"
       variant="ghost"
       className={cn(
-        "flex items-center gap-1 align-baseline text-xs text-[#b8b8b8]",
+        "flex items-center gap-1 p-0.5 align-baseline text-xs text-text-lighter",
         className
       )}
       onClick={() => {}}

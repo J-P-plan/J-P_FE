@@ -14,10 +14,10 @@
     --color-point-yellow: #ffd990;
     --color-point-coral: #ff9e80;
 
-    --color-text-primary: #1a1a1a;
-    --color-text-secondary: #4d4d4d;
-    --color-text-disabled: #b8b8b8;
-    --color-text-on-primary: #ffffff;
+    --color-text-darkest: #1a1a1a;
+    --color-text-darker: #4d4d4d;
+    --color-text-lighter: #b8b8b8;
+    --color-text-lightest: #ffffff;
 
     --color-background-primary: #ffffff;
     --color-background-secondary: #fafafa;
@@ -34,10 +34,10 @@
     --color-point-yellow: #ffd990;
     --color-point-coral: #ff9e80;
 
-    --color-text-primary: #ffffff;
-    --color-text-secondary: #b8b8b8;
-    --color-text-disabled: #4d4d4d;
-    --color-text-on-primary: #1a1a1a;
+    --color-text-darkest: #ffffff;
+    --color-text-darker: #b8b8b8;
+    --color-text-lighter: #4d4d4d;
+    --color-text-lightest: #1a1a1a;
 
     --color-background-primary: #1a1a1a;
     --color-background-secondary: #252525;

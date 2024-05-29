@@ -26,13 +26,13 @@ const config = {
         },
         background: {
           DEFAULT: "var(--color-background-primary)",
-          foreground: "var(--color-background-secondary)",
+          secondary: "var(--color-background-secondary)",
         },
         text: {
-          primary: "var(--color-text-primary)",
-          secondary: "var(--color-text-secondary)",
-          disabled: "var(--color-text-disabled)",
-          onPrimary: "var(--color-text-on-primary)",
+          darkest: "var(--color-text-darkest)",
+          darker: "var(--color-text-darker)",
+          lighter: "var(--color-text-lighter)",
+          lightest: "var(--color-text-lightest)",
         },
         white: "#FFFFFF",
         black: "#000000",
@@ -47,6 +47,78 @@ const config = {
           800: "#333333",
           900: "#1A1A1A",
         },
+      },
+      fontSize: {
+        xs: [
+          "0.75rem",
+          {
+            lineHeight: "0.9rem",
+            fontWeight: "400",
+          },
+        ],
+        "xs-bold": [
+          "0.75rem",
+          {
+            lineHeight: "0.9rem",
+            fontWeight: "700",
+          },
+        ],
+        sm: [
+          "0.875rem",
+          {
+            lineHeight: "1rem",
+            fontWeight: "400",
+          },
+        ],
+        "sm-bold": [
+          "0.875rem",
+          {
+            lineHeight: "1rem",
+            fontWeight: "700",
+          },
+        ],
+        md: [
+          "1rem",
+          {
+            lineHeight: "1.2rem",
+            fontWeight: "400",
+          },
+        ],
+        "md-bold": [
+          "1rem",
+          {
+            lineHeight: "1.2rem",
+            fontWeight: "700",
+          },
+        ],
+        lg: [
+          "1.25rem",
+          {
+            lineHeight: "1.75rem",
+            fontWeight: "400",
+          },
+        ],
+        "lg-bold": [
+          "1.25rem",
+          {
+            lineHeight: "1.75rem",
+            fontWeight: "700",
+          },
+        ],
+        xl: [
+          "1.5rem",
+          {
+            lineHeight: "1.75rem",
+            fontWeight: "700",
+          },
+        ],
+        "2xl": [
+          "2rem",
+          {
+            lineHeight: "2.25rem",
+            fontWeight: "700",
+          },
+        ],
       },
       boxShadow: {
         mobileCard:

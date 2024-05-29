@@ -22,7 +22,7 @@ const CityTrendingItem = ({ placeCity, priority, className }: Props) => {
         priority={priority}
       />
       <div className="absolute bottom-2 right-2 rounded-full bg-white/70 px-2.5 py-0.5">
-        <p className="  text-sm font-bold capitalize leading-[normal] text-gray-700 ">
+        <p className="  text-sm-bold capitalize text-text-darker">
           {placeCity.name}
         </p>
       </div>
