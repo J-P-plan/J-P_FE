@@ -48,7 +48,7 @@ const Header = ({ className, leftNode, title, rightNode }: Props) => {
     <header className={cn(headerVariants({ isVisible, className }))}>
       <div>{leftNode ?? leftNode}</div>
       {title && (
-        <h1 className="flex-1 text-center text-xl font-bold text-[#1a1a1a]">
+        <h1 className="flex-1 text-center text-lg-bold text-text-darkest">
           {title}
         </h1>
       )}

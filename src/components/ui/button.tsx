@@ -12,14 +12,13 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
-        destructive: "bg-point-red text-text-onPrimary hover:bg-point-red/90",
-        rounded:
-          "bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl",
+        default: "bg-primary text-primary-light hover:bg-primary/90",
+        destructive: "bg-point-red text-text-lightest hover:bg-point-red/90",
+        rounded: "bg-primary text-primary-light hover:bg-primary/90 rounded-xl",
         outline:
-          "border border-input bg-background hover:bg-gray-900 hover:text-text-onPrimary",
-        secondary: "bg-secondary text-text-onPrimary hover:bg-secondary/80",
-        ghost: "hover:bg-gray-900 hover:text-text-onPrimary",
+          "border border-input bg-background hover:bg-gray-900 hover:text-text-lightest",
+        secondary: "bg-secondary text-text-lightest hover:bg-secondary/80",
+        ghost: "hover:bg-background-secondary hover:text-text-darker",
       },
       size: {
         default: "h-auto px-4 py-2",

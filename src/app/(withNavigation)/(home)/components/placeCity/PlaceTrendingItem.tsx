@@ -22,10 +22,8 @@ const PlaceTrendingItem = ({ placeCity, priority, className }: Props) => {
         priority={priority}
       />
       <div className="flex flex-col gap-1">
-        <p className="text-sm font-bold capitalize leading-[normal]">
-          {placeCity.name}
-        </p>
-        <p className="text-xs font-bold capitalize leading-[normal] text-[#666]">
+        <p className="text-sm-bold capitalize">{placeCity.name}</p>
+        <p className="text-xs-bold capitalize text-gray-600">
           {placeCity.subName}
         </p>
       </div>

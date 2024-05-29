@@ -38,10 +38,10 @@ const MobileNavigation = () => {
                 />
               </span>
               <p
-                className={`text-center text-[10px] leading-5 ${
+                className={`text-center text-xs ${
                   pathname === menu.href
-                    ? "font-bold text-[#FFC814]"
-                    : "font-bold text-[#4D4D4D]"
+                    ? "font-bold text-primary"
+                    : "font-bold text-text-lighter"
                 } `}
               >
                 {menu.name}
