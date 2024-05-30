@@ -23,11 +23,18 @@ const PlacePropsMap = {
 interface Props {
   placeCityType: "CITY" | "TRAVEL_PLACE" | "THEME";
 }
+// const { data: placeList } = await PlaceListAPI.getPlaceList({
+//   page: 1,
+//   placeType: placeCityType,
+//   elementCnt: 10,
+// });
+
 
 const PlaceList = ({ placeCityType } : Props) => {
   const placeCityItem = PlacePropsMap[placeCityType];
   return (
     <>
+      {/* {placeList?.map((_, index) => ( */}
       {[1, 2, 3, 4, 5, 6, 7].map((_, index) => (
         <PlaceItem key={index} {...placeCityItem} />
       ))}
