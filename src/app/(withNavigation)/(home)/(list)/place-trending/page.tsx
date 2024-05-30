@@ -1,6 +1,6 @@
 "use client";
-import MobileHomeHeader from "../../components/header/MobileHomeHeader";
-import MobileNavigation from "@/components/common/MobileNavigation";
+import MobileHomeHeader from "@/components/common/header/MobileHomeHeader";
+import MobileNavigation from "@/components/common/navigation/MobileNavigation";
 import PlaceList from "../components/PlaceList";
 import { usePathname } from 'next/navigation';
 import React from "react";

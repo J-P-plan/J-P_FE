@@ -14,7 +14,7 @@ const PlaceItem = ({useCityName, useDiscription, useTheme} : PlaceItemProps) => 
       <Link href="/">
         <div>
           {useCityName &&
-            <div className="absolute block borde rounded-3xl bg-gray-200 opacity-40 px-2">
+            <div className="absolute block border rounded-3xl bg-gray-200 opacity-40 px-2">
                <span>props city</span>
             </div>
           }
