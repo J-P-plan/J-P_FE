@@ -1,7 +1,13 @@
 import Link from "next/link";
 import React from "react";
 
-const PlaceItem = ({useCityName, useDiscription, useTheme}) => {
+interface PlaceItemProps {
+  useCityName: boolean; 
+  useDiscription: boolean; 
+  useTheme: boolean;
+}
+
+const PlaceItem = ({useCityName, useDiscription, useTheme} : PlaceItemProps) => {
   const img = "https://www.ghibli.jp/gallery/ponyo016.jpg";
   return (
     <div className="p-3.5" style={{width: "164px"}}>

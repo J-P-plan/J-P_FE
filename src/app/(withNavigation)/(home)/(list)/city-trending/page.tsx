@@ -13,7 +13,7 @@ type PlaceCityType = {
 
 const placeCityType: PlaceCityType = {
   "place-theme": "THEME",
-  "place-trending": "TRAVEL",
+  "place-trending": "TRAVEL_PLACE",
   "city-trending": "CITY",
 };
 
@@ -24,7 +24,7 @@ const page = () => {
     <main>
       <MobileHomeHeader />
       <div className="flex p-4" style={{flexWrap:"wrap"}}>
-      <PlaceList placeCityType={placeCityType[key] as "THEME" | "TRAVEL" | "CITY"} />
+      <PlaceList placeCityType={placeCityType[key] as "THEME" | "TRAVEL_PLACE" | "CITY"} />
       </div>
       <MobileNavigation />
     </main>

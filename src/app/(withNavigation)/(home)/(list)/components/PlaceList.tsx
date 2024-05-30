@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import PlaceItem from "./PlaceItem";
+import { PlaceListAPI } from "@/lib/api/placeList";
 
 const PlacePropsMap = {
     CITY: {
@@ -7,7 +9,7 @@ const PlacePropsMap = {
       useDiscription: false,
       useTheme: false,
     },
-    TRAVEL: {
+    TRAVEL_PLACE: {
         useCityName: false,
         useDiscription: true,
         useTheme: false,  
@@ -19,7 +21,7 @@ const PlacePropsMap = {
     },
 };
 interface Props {
-  placeCityType: "CITY" | "TRAVEL" | "THEME";
+  placeCityType: "CITY" | "TRAVEL_PLACE" | "THEME";
 }
 
 const PlaceList = ({ placeCityType } : Props) => {
