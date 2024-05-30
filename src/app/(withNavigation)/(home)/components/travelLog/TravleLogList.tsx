@@ -9,7 +9,7 @@ const TravelLogList = async () => {
   return (
     <WithTitleWrapper title="사람들이 찜한 여행기" moreHref="travel-log">
       <div className="flex flex-col gap-2">
-        {[...travelLogs].slice(0, 2).map(travelLog => (
+        {travelLogs?.slice(0, 2).map(travelLog => (
           <TravelLogCard key={travelLog.id} travelLog={travelLog} />
         ))}
       </div>
