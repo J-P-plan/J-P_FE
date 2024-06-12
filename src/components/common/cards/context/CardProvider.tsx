@@ -7,18 +7,20 @@ import CommandButton from "./CommentButton";
 import LikeButton from "./LikeButton";
 import StarButton from "./StarButton";
 import UserInfo from "./UserInfo";
-
+import CardProfileImage from "../CardProfileImage";
+;
 interface ICard {
+  id?: number;
   isLike?: boolean;
   likeCount?: number;
-  commentCount: number;
+  commentCount?: number;
   star?: number;
   imageSrc?: string;
   tagList?: string[];
-  title: string;
+  title?: string;
   description?: string;
-  userName: string;
-  userImageSrc: string;
+  userName?: string;
+  userImageSrc?: string;
 }
 
 const CardContext = createContext<ICard>({} as ICard);
@@ -41,8 +43,7 @@ Card.LikeButton = LikeButton;
 Card.CommandButton = CommandButton;
 Card.StarButton = StarButton;
 Card.CardImage = CardImage;
+Card.CardProfileImage = CardProfileImage;
 Card.CardTags = CardTags;
 Card.CardTitle = CardTitle;
 Card.UserInfo = UserInfo;
-
-export default Card;
