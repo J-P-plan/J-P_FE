@@ -1,5 +1,5 @@
 import React from "react";
-import { RecommendAPI } from "@/lib/api/recommend";
+// import { RecommendAPI } from "@/lib/api/recommend";
 import RecommendCard from "./RecommendCard";
 import WithTitleWrapper from "@/components/common/wrapper/WithTitleWrapper";
 
