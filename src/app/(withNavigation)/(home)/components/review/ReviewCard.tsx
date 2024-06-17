@@ -1,6 +1,6 @@
 "use client";
 
-import Card from "@/components/common/cards/context/CardProvider";
+import { Card } from "@/components/common/cards/context/CardProvider";
 import React from "react";
 import { Review } from "@/lib/types/review";
 

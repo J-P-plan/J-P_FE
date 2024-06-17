@@ -1,6 +1,6 @@
 "use client";
 
-import Card from "@/components/common/cards/context/CardProvider";
+import { Card }from "@/components/common/cards/context/CardProvider";
 import React from "react";
 import { TravelLog } from "@/lib/types/travelLog";
 
