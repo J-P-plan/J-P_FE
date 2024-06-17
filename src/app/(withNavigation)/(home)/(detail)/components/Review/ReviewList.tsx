@@ -9,7 +9,7 @@ const ReviewList = async () => {
   const { data: reviews } = await ReviewAPI.getReviews();
 
   return (    
-    <WithTitleWrapper title="리뷰" moreHref="/review" className="pb-28">
+    <WithTitleWrapper title="리뷰" moreHref="/review" className="pt-3 px-4 pb-28">
       <Swiper slidesPerView={'auto'} className="w-100">            
         {reviews?.slice(0, 2).map(review => (
             <SwiperSlide className={"flex flex-1 basis-[70%] mr-[2.6%] shadow-[0_2px_20px_0_rgba(189,216,204,0.5)] last:sm:mr-[12%]"}>
