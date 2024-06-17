@@ -6,12 +6,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import LocationIcon from "@/components/icons/LocationIcon";
 import { Tag } from "@/components/ui/Tag";
 import Link from "next/link";
-import WithTitleWrapper from "@/components/common/wrapper/WithTitleWrapper";
-import RecommendTravelCard from "../../components/RecommendTravelCard/RecommendTravelCard";
-import ReviewCard from "../../components/Review/ReviewCard";
+import RecommendCard from "../../components/recommend/RecommendCard";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import ReviewList from "../../components/Review/ReviewList";
 
 const page = () => {
   const detailDumy = {
@@ -36,7 +35,7 @@ const page = () => {
     "isLiked": true
   }
 
-  const recommendTravelList= [{
+  const recommendList= [{
     "id": 1,
     "imageSrc": "https://www.ghibli.jp/gallery/ponyo016.jpg",
     "title": "월정교",
@@ -119,23 +118,11 @@ return <>
         </div>
         <Link href={"/place-trending"} className="text-[#b8b8b8] text-xs">더보기</Link>
       </div>
-      {recommendTravelList.map(recommendTravel => (
-        <RecommendTravelCard recommend={recommendTravel}/>
+      {recommendList.map(recommend => (
+        <RecommendCard recommend={recommend}/>
       ))}
       {/* review */}
-      <div className="mt-6">
-        <WithTitleWrapper title="리뷰" moreHref="/review">
-          <Swiper slidesPerView={'auto'} className="w-100">
-            {reviewList?.map((review, idx) => {
-              return(
-                <SwiperSlide className={"flex flex-1 basis-[70%] mr-[2.6%] shadow-[0_2px_20px_0_rgba(189,216,204,0.5)] last:sm:mr-[12%]"} key={idx}>
-                  <ReviewCard review={review}/>
-                </SwiperSlide>
-              )
-            })}
-          </Swiper>
-        </WithTitleWrapper>
-          </div>
+      <ReviewList/>
     </div>
   </>;
 };

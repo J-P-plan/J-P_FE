@@ -7,7 +7,7 @@ import CommandButton from "./CommentButton";
 import LikeButton from "./LikeButton";
 import StarButton from "./StarButton";
 import UserInfo from "./UserInfo";
-import CardProfileImage from "../CardProfileImage";
+import CardDescription from "./CardDescription";
 ;
 interface ICard {
   id?: number;
@@ -43,7 +43,7 @@ Card.LikeButton = LikeButton;
 Card.CommandButton = CommandButton;
 Card.StarButton = StarButton;
 Card.CardImage = CardImage;
-Card.CardProfileImage = CardProfileImage;
 Card.CardTags = CardTags;
 Card.CardTitle = CardTitle;
+Card.CardDescription = CardDescription;
 Card.UserInfo = UserInfo;
