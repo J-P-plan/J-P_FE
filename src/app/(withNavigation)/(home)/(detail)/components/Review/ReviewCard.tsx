@@ -9,6 +9,7 @@ interface Props {
 }
 
 const ReviewCard = ({ review }: Props) => {
+
   const cardDto = {
     title: review.subject,
     description: review.content,
@@ -20,15 +21,17 @@ const ReviewCard = ({ review }: Props) => {
   };
 
   return (
-    <div className="flex items-center gap-4 rounded-md">
+    <div className="items-center gap-4 p-2 mb-3 border rounded-md bg-white last:md:mr-[30px]">
       <Card card={cardDto}>
-        <Card.CardImage />
+        <div className="flex space-x-10">
+          <Card.UserInfo />
+          <Card.StarButton />
+        </div>
         <div className="flex flex-1 flex-col gap-2">
-          <Card.CardTitle />
-          <div className="flex w-full items-center justify-between">
-            <Card.UserInfo />
+          <Card.CardDescription />
+          <div className="w-full">
             <div className="flex items-center gap-2">
-              <Card.StarButton />
+              <Card.LikeButton />
               <Card.CommandButton />
             </div>
           </div>

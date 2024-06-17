@@ -46,7 +46,10 @@
       "error",
       {
         "endOfLine": "auto"
-      }
+      },
+      {
+        "usePrettierrc": false
+      },
     ],
     "react/no-unescaped-entities": "off"
   }
